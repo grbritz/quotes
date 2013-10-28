@@ -1,0 +1,640 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dura",
+				"durationMsg"
+			],
+			[
+				"scroll",
+				"scrollbar	scrollbar"
+			],
+			[
+				"approa",
+				"approvalsStr"
+			],
+			[
+				"locker-",
+				"lockers-container"
+			],
+			[
+				"qur",
+				"quarter	Default"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"quarter",
+				"quarterCont	Default"
+			],
+			[
+				"options",
+				"options	Select"
+			],
+			[
+				"user",
+				"user_for_invalid_password"
+			],
+			[
+				"pass",
+				"password_confirmation"
+			],
+			[
+				"hea",
+				"heap-footer"
+			],
+			[
+				"sie",
+				"sizeAndTags"
+			],
+			[
+				"mem_heap",
+				"mem_heap_hi"
+			],
+			[
+				"PRECE",
+				"TAG_PRECEDING_USED"
+			],
+			[
+				"preced",
+				"precedingBlockUseTag"
+			],
+			[
+				"next",
+				"nextFree"
+			],
+			[
+				"freeBlock",
+				"freeBlock"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"set sy ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set sy blade",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"set syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sftp",
+				"Preferences: SFTP Settings"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 147.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/graemebritz/projects/MAMP/quotes/index.php",
+		"/Users/graemebritz/.bash_profile",
+		"/Users/graemebritz/Downloads/Missing-Term-in-an-AP_testcases/input000.txt",
+		"/Users/graemebritz/.ssh/config",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/libraries/mailer.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/ajax.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/wordpress/wp-content/themes/uwtheme/js/formMethods.js",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/bypass/system/cidip/cidip_index.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/wordpress/wp-content/themes/uwtheme/api/api.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/libraries/mail_hooks.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-10-21.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-10-22.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/libraries/process_form.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/wordpress/wp-content/themes/uw-theme/api/api.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/application_details/main.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/admin.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/header.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/models/events.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/eventListings.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/models/email_records.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/testing.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/models/approval_steps.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/application_details/approvalStatus.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/initializeTable.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/bypass/.htaccess",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-10-08.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-10-01.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/libraries/admin_meta.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-10-02.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/manage_locations.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/application_details.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/search.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/.htaccess",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-09-30.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/application_details/instanceEdit.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-09-29.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-09-28.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/edit_application.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/application_details/edit_instance.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/error.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/view_email_history.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/libraries/application_details_generator.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/application_details/edit.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/email_records/view_email_history.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/application_details/event.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/manage_locations/sublocation.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-09-27.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/venueOperators.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/models/admins.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/models/locations.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-09-26.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/application_details/instanceDetails.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-09-25.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/libraries/authenticate.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/maintenance.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/UUF_controller.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/config/config.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/base_controller.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/maintenance.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/sprogram.sublime-project",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/base_controller",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-09-24.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/search_archive.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/search_archive/index.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-08-30.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/contact_support/newTicket.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/controllers/contact_support.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/wordpress/wp-content/themes/uw-theme/venue-operators.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/banquet_form_steps/step2.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/uuf_form_steps/step2.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/assets/editablegrid/src/editablegrid_editors.js",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/assets/js/formMethods.js",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/uuf_form_steps/step6.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/banquet_form_steps/step5.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/logs/log-2013-08-29.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/application_details_archive/main.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/application_details_archive/instanceDetails.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/models/archive.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/helpers/common_helper.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/assets/css/style.css",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/sftp-config.json",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/application_details_archive/applicant.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/application_details_archive/event.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application/views/application_details/applicant.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/models/AcademicYear.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/routes.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/assets/js/lockerWidget.js",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/controllers/QuarterController.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/views/rentals/new.blade.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/views/rentals/view.blade.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/macros.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/views/rentals/rentals.blade.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/controllers/RentalController.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/assets/css/style.css",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/controllers/LockerController.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/assets/js/general.js",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/models/Quarter.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/views/templates/master.blade.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/models/Rental.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/controllers/SettingsController.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/readme.md",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/composer.json",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/sftp-config.json",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/start/local.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/views/templates/dialog.blade.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/assets/foundation-4.3.1/js/foundation/foundation.reveal.js",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/bootstrap/start.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/models/Locker.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/models/LockerType.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/views/rentals.blade.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/database/seeds/DatabaseSeeder.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/database/seeds/ContactSeeder.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/models/Contact.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/models/QuarterRental.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/models/RentalQuarter.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/models/RentalClosure.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/models/Log.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Info/public_html/locker_manager/app/models/Admin.php",
+		"/Users/graemebritz/Library/Application Support/Sublime Text 2/Packages/SFTP/SFTP.sublime-settings",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/app/filters.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/app/views/layouts/master.blade.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/assets/foundation-4.3.1/css/foundation.min.css",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/assets/foundation-4.3.1/css/foundation.css",
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/Unnamed Site 2/public_html/admin/.htaccess",
+		"/Users/graemebritz/Documents/Web Development/local backups/pristine-dev/public_html/.htaccess",
+		"/Users/graemebritz/Documents/Web Development/local backups/pristine-dev/public_html/application/controllers/testing.php",
+		"/Users/graemebritz/Documents/Web Development/local backups/pristine-dev/public_html/application/controllers/welcome.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/graemebritz/Documents/Web Development/local backups/sprogram/public_html/admin/application",
+			"instanceDetails.php",
+			"style.css",
+			"general.js",
+			"lockerWidget.js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"detect_unicode",
+			"detect_unicde",
+			"route",
+			"approveAPp",
+			"approveInstance",
+			"$this->CI->load->view('error'",
+			"error",
+			"getAdmins",
+			"koor",
+			"recipients",
+			"venuedata",
+			"getadmin",
+			"sao",
+			"sponsors",
+			"sponsor",
+			"instance[",
+			"with",
+			"view",
+			"center",
+			".center",
+			"console",
+			"console.log",
+			"console",
+			"consle",
+			"this",
+			"opts.quarter[0]",
+			"quarters",
+			"clearLoc",
+			"modal",
+			"rental",
+			"Rental",
+			"rental",
+			"Rental",
+			"rental",
+			"Rental",
+			"rental",
+			"Rental",
+			"<?",
+			"zepto",
+			"paths",
+			"i + j",
+			"protected $timestamps",
+			"getSAO",
+			"getAdminsByType",
+			"getAdminsByType(7",
+			"getAdvisors",
+			"getVenueOperators",
+			"redirect",
+			"sess_destroy",
+			"session",
+			"last_url",
+			"session->userdata('last_url')",
+			"$this->CI->session->userdata('last_url')",
+			"session",
+			"model",
+			"heap-footer",
+			"freeblock"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"centered",
+			"str",
+			"opts.quarter",
+			"ind",
+			"public $timestamps"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 136.0
+	},
+	"output.sftp":
+	{
+		"height": 116.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"mailer",
+				"admin/application/libraries/mailer.php"
+			],
+			[
+				"process",
+				"admin/application/libraries/process_form.php"
+			],
+			[
+				"header",
+				"admin/application/views/header.php"
+			],
+			[
+				"events",
+				"admin/application/models/events.php"
+			],
+			[
+				"manage_locations",
+				"admin/application/controllers/manage_locations.php"
+			],
+			[
+				"admin_met",
+				"admin/application/libraries/admin_meta.php"
+			],
+			[
+				"admin",
+				"admin/application/controllers/admin.php"
+			],
+			[
+				"mail_h",
+				"admin/application/libraries/mail_hooks.php"
+			],
+			[
+				"approval",
+				"admin/application/views/application_details/approvalStatus.php"
+			],
+			[
+				"search",
+				"admin/application/controllers/search_archive.php"
+			],
+			[
+				"contact_s",
+				"admin/application/controllers/contact_support.php"
+			],
+			[
+				"admins",
+				"admin/application/models/admins.php"
+			],
+			[
+				"applicationdetails",
+				"admin/application/libraries/application_details_generator.php"
+			],
+			[
+				"event",
+				"admin/application/views/application_details/event.php"
+			],
+			[
+				"step2",
+				"admin/application/views/uuf_form_steps/step2.php"
+			],
+			[
+				"step5",
+				"admin/application/views/banquet_form_steps/step5.php"
+			],
+			[
+				"uuffor",
+				"admin/application/views/uuf_form_steps/step6.php"
+			],
+			[
+				"forme",
+				"admin/assets/js/formMethods.js"
+			],
+			[
+				"venue",
+				"admin/application/views/venueOperators.php"
+			],
+			[
+				"applicant",
+				"admin/application/views/application_details/applicant.php"
+			],
+			[
+				"macros",
+				"app/macros.php"
+			],
+			[
+				"new.",
+				"app/views/rentals/new.blade.php"
+			],
+			[
+				"quartercon",
+				"app/controllers/QuarterController.php"
+			],
+			[
+				"lockercon",
+				"app/controllers/LockerController.php"
+			],
+			[
+				"rentalcon",
+				"app/controllers/RentalController.php"
+			],
+			[
+				"lockerwid",
+				"assets/js/lockerWidget.js"
+			],
+			[
+				"vie",
+				"app/views/rentals/view.blade.php"
+			],
+			[
+				"rentalcont",
+				"app/controllers/RentalController.php"
+			],
+			[
+				"style",
+				"assets/css/style.css"
+			],
+			[
+				"general",
+				"assets/js/general.js"
+			],
+			[
+				"lockerwi",
+				"assets/js/lockerWidget.js"
+			],
+			[
+				"gener",
+				"assets/js/general.js"
+			],
+			[
+				"master",
+				"app/views/templates/master.blade.php"
+			],
+			[
+				"routes",
+				"app/routes.php"
+			],
+			[
+				"academ",
+				"app/models/AcademicYear.php"
+			],
+			[
+				"lockerw",
+				"assets/js/lockerWidget.js"
+			],
+			[
+				"quarter",
+				"app/models/Quarter.php"
+			],
+			[
+				"quartercontr",
+				"app/controllers/QuarterController.php"
+			],
+			[
+				"",
+				"app/routes.php"
+			],
+			[
+				"lockerwide",
+				"assets/js/lockerWidget.js"
+			],
+			[
+				"lockercont",
+				"app/controllers/LockerController.php"
+			],
+			[
+				"rental",
+				"app/models/Rental.php"
+			],
+			[
+				"quarrte",
+				"app/controllers/QuarterController.php"
+			],
+			[
+				"settings",
+				"app/controllers/SettingsController.php"
+			],
+			[
+				"routes.",
+				"app/routes.php"
+			],
+			[
+				"style.css",
+				"assets/css/style.css"
+			],
+			[
+				"local",
+				"app/start/local.php"
+			],
+			[
+				"new",
+				"app/views/rentals/new.blade.php"
+			],
+			[
+				"comp",
+				"composer.json"
+			],
+			[
+				"model",
+				"vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php"
+			],
+			[
+				"f",
+				"config/initializers/filter_parameter_logging.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 213.0,
+	"status_bar_visible": true
+}
