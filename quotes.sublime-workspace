@@ -132,6 +132,8 @@
 	},
 	"file_history":
 	[
+		"/Users/graemebritz/projects/gitsample/test/readme.md",
+		"/Users/graemebritz/projects/MAMP/quotes/readme.md",
 		"/Users/graemebritz/projects/MAMP/quotes/index.php",
 		"/Users/graemebritz/.bash_profile",
 		"/Users/graemebritz/Downloads/Missing-Term-in-an-AP_testcases/input000.txt",
@@ -257,9 +259,7 @@
 		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/assets/foundation-4.3.1/css/foundation.css",
 		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
 		"/Users/graemebritz/Documents/Web Development/local backups/Unnamed Site 2/public_html/admin/.htaccess",
-		"/Users/graemebritz/Documents/Web Development/local backups/pristine-dev/public_html/.htaccess",
-		"/Users/graemebritz/Documents/Web Development/local backups/pristine-dev/public_html/application/controllers/testing.php",
-		"/Users/graemebritz/Documents/Web Development/local backups/pristine-dev/public_html/application/controllers/welcome.php"
+		"/Users/graemebritz/Documents/Web Development/local backups/pristine-dev/public_html/.htaccess"
 	],
 	"find":
 	{
