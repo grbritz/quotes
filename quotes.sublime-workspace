@@ -132,6 +132,10 @@
 	},
 	"file_history":
 	[
+		"/Users/graemebritz/projects/MAMP/quotes/app/database/seeds/DatabaseSeeder.php",
+		"/Users/graemebritz/projects/MAMP/quotes/app/database/seeds/UserSeeder.php",
+		"/Users/graemebritz/projects/MAMP/quotes/app/models/User.php",
+		"/Users/graemebritz/projects/MAMP/quotes/.git/MERGE_MSG",
 		"/Users/graemebritz/projects/gitsample/test/readme.md",
 		"/Users/graemebritz/projects/MAMP/quotes/readme.md",
 		"/Users/graemebritz/projects/MAMP/quotes/index.php",
@@ -255,11 +259,7 @@
 		"/Users/graemebritz/Library/Application Support/Sublime Text 2/Packages/SFTP/SFTP.sublime-settings",
 		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/app/filters.php",
 		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/app/views/layouts/master.blade.php",
-		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/assets/foundation-4.3.1/css/foundation.min.css",
-		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/assets/foundation-4.3.1/css/foundation.css",
-		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
-		"/Users/graemebritz/Documents/Web Development/local backups/Unnamed Site 2/public_html/admin/.htaccess",
-		"/Users/graemebritz/Documents/Web Development/local backups/pristine-dev/public_html/.htaccess"
+		"/Users/graemebritz/Documents/Web Development/local backups/Hub Testing Server/public_html/frat_events/assets/foundation-4.3.1/css/foundation.min.css"
 	],
 	"find":
 	{
