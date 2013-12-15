@@ -20,13 +20,13 @@
 </head>
 <body>
 	<div id="navbar">
-		<a href="#create">
+		<a href="#quotes/new">
 			<i class="fa fa-plus"></i>
 		</a>
 		<a href="#discover">
 			<i class="fa fa-asterisk"></i>
 		</a>
-		<a href="#quotes">
+		<a href="#quotes/list">
 			<i class="fa fa-quote-left"></i>
 		</a>
 		<a href="#tags">
