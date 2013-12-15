@@ -20,16 +20,16 @@
 </head>
 <body>
 	<div id="navbar">
-		<a href="#quotes/new">
+		<a href="#quotes/new" title="Create a quote">
 			<i class="fa fa-plus"></i>
 		</a>
-		<a href="#discover">
+		<a href="#discover" title="Discover quotes">
 			<i class="fa fa-asterisk"></i>
 		</a>
-		<a href="#quotes/list">
+		<a href="#quotes/list" title="Your quotes">
 			<i class="fa fa-quote-left"></i>
 		</a>
-		<a href="#tags">
+		<a href="#tags" title="Your tags">
 			<i class="fa fa-tag"></i>
 		</a>
 	</div>
