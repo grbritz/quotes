@@ -11,6 +11,12 @@
 	<script type="text/javascript" src="{= asset('include/ng/lib/angular.min.js') =}"></script>
 	<script type="text/javascript" src="{= asset('include/ng/lib/angular-resource.min.js') =}"></script>
 	<script type="text/javascript" src="{= asset('include/ng/lib/angular-route.min.js') =}"></script>
+
+	<script type="text/javascript" src="{= asset('include/ng/app/app.js') =}"></script>
+	<script type="text/javascript" src="{= asset('include/ng/app/controller.js') =}"></script>
+	<script type="text/javascript" src="{= asset('include/ng/app/directives.js') =}"></script>
+	<script type="text/javascript" src="{= asset('include/ng/app/filters.js') =}"></script>
+	<script type="text/javascript" src="{= asset('include/ng/app/services.js') =}"></script>
 </head>
 <body>
 	<div id="navbar">
