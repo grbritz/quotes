@@ -13,8 +13,7 @@
 
 Route::get('/', function()
 {
-	return "Yart";
-	//return View::make('hello');
+	return View::make('base');
 });
 
 Route::group(array('prefix' => 'quotes'), function(){
