@@ -25,6 +25,11 @@ Route::group(array('prefix' => 'quotes'), function(){
 	Route::get('/public', function(){
 		return Response::make(array(
 			array(
+				'author'	=> 'Theodore Roosevelt',
+				'source'	=> 'http://wikipedia.org',
+				'content'	=> 'Far better is it to dare mighty things, to win glorious triumphs, even though checkered by failure... than to rank with those poor spirits who neither enjoy nor suffer much, because they live in a gray twilight that knows not victory nor defeat.'
+				),
+			array(
 				'author'	=> 'Albert Einstein', 
 				'source'	=> 'http://google.com',
 				'content'	=> 'I have found no better expression than 
