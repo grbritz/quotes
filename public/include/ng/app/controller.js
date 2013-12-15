@@ -6,6 +6,6 @@ var quoteControllers = angular.module('quoteControllers', []);
 
 quoteControllers.controller('QuoteListCtrl', ['$scope', 'Quote',
 	function ($scope, Quote) {
-		$scope.quotes = Quotes.query();
+		$scope.quotes = Quote.query();
 	}
 ]);
