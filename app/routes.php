@@ -171,5 +171,4 @@ Route::group(array('prefix' => 'tags'), function(){
 			));
 	});
 
-	//Route::get('/public');
 });
