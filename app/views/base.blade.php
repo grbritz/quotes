@@ -8,9 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="{= asset('include/css/style.css') =}">
 
 
-	<script type="text/javascript" src="{= asset('include/ng/lib/angular.min.js"></script>
-	<script type="text/javascript" src="{= asset('include/ng/lib/angular-resource.min.js"></script>
-	<script type="text/javascript" src="{= asset('include/ng/lib/angular-route.min.js"></script>
+	<script type="text/javascript" src="{= asset('include/ng/lib/angular.min.js') =}"></script>
+	<script type="text/javascript" src="{= asset('include/ng/lib/angular-resource.min.js') =}"></script>
+	<script type="text/javascript" src="{= asset('include/ng/lib/angular-route.min.js') =}"></script>
 </head>
 <body>
 	<div id="navbar">
