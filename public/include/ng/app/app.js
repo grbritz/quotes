@@ -20,8 +20,8 @@ quoteApp.config(['$routeProvider',
 				templateUrl: 'include/ng/partials/quotes-new.html',
 				controller: 'QuoteCreateCtrl'
 			})
-			.when('/quotes/all', {
-				templateUrl: 'include/ng/partials/quotes-all.html',
+			.when('/quotes/list', {
+				templateUrl: 'include/ng/partials/quotes-list.html',
 				controller: 'QuoteListCtrl'
 			})
 			.when('/quotes/:quoteId', {
@@ -32,8 +32,8 @@ quoteApp.config(['$routeProvider',
 				templateUrl: 'include/ng/partials/tags-new.html',
 				controller: 'TagCreateCtrl'
 			})
-			.when('/tags/all', {
-				templateUrl: 'include/ng/partials/tags-all.html',
+			.when('/tags/list', {
+				templateUrl: 'include/ng/partials/tags-list.html',
 				controller: 'TagListCtrl'
 			})
 			.when('/tags/:tagId', {
