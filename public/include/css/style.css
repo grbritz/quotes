@@ -38,9 +38,11 @@
 	color: #FFF;
 	background: #444;
 }
-#navbar > a:hover {
-	color: #999;
-	background: #222;
+#navbar > a:hover,
+#navbar > a:active,
+#navbar > a.active {
+	color: #444;
+	background: #FFF;
 }
 #navbar > a > i {
 	padding-top: 10px;
@@ -60,7 +62,9 @@
 
 
 
+
 /* misc */
+
 
 #discover-quote {
 	width: 67%;
@@ -76,4 +80,8 @@
 #discover-quote .author {
 	margin: 16px 0 24px;
 	color: #999;
+}
+
+.quotes blockquote {
+	border: none;
 }

@@ -19,17 +19,17 @@
 	<script type="text/javascript" src="{= asset('include/ng/app/services.js') =}"></script>
 </head>
 <body>
-	<div id="navbar">
-		<a href="#quotes/new" title="Create a quote">
+	<div id="navbar" ng-controller="NavCtrl">
+		<a ng-class="{active: isActive('/quotes/new')}" href="#quotes/new" title="Create a quote">
 			<i class="fa fa-plus"></i>
 		</a>
-		<a href="#discover" title="Discover quotes">
+		<a ng-class="{active: isActive('/discover')}" href="#discover" title="Discover quotes">
 			<i class="fa fa-asterisk"></i>
 		</a>
-		<a href="#quotes/list" title="Your quotes">
+		<a ng-class="{active: isActive('/quotes/list')}" href="#quotes/list" title="Your quotes">
 			<i class="fa fa-quote-left"></i>
 		</a>
-		<a href="#tags/list" title="Your tags">
+		<a ng-class="{active: isActive('/tags/list')}" href="#tags/list" title="Your tags">
 			<i class="fa fa-tag"></i>
 		</a>
 	</div>
