@@ -107,7 +107,7 @@ Route::group(array('prefix' => 'quotes'), function(){
 				),
 				array(
 				'author'	=> 'Socrates',
-				'source'	=> 'http://greeks.com',
+				'source'	=> '',
 				'content'	=> 'Beware the barrenness of a busy life.',
 				'tags'		=> array(
 									'id'	=> 2,

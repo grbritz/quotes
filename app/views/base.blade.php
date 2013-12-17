@@ -29,7 +29,7 @@
 		<a href="#quotes/list">
 			<i class="fa fa-quote-left"></i>
 		</a>
-		<a href="#tags">
+		<a href="#tags/list">
 			<i class="fa fa-tag"></i>
 		</a>
 	</div>
