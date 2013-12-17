@@ -9,3 +9,9 @@ quoteServices.factory('Quote', ['$resource',
 		return $resource('quotes/:source', {source: 'user'});
 	}
 ]);
+
+quoteServices.factory('TagResource', ['$resource',
+	function ($resource){
+		return $resource('tags/:source', {source: 'user'});
+	}
+]);

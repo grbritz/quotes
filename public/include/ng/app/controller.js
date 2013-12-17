@@ -9,3 +9,13 @@ quoteControllers.controller('QuoteListCtrl', ['$scope', 'Quote',
 		$scope.quotes = Quote.query();
 	}
 ]);
+
+quoteControllers.controller('TagListCtrl', ['$scope', 'TagResource', 
+	function ($scope, TagResource){
+		$scope.tags = TagResource.query();
+
+		//$scope.tagFilters
+
+
+	}
+]);
