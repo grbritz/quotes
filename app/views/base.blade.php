@@ -29,12 +29,14 @@
 		<a href="#quotes/list" title="Your quotes">
 			<i class="fa fa-quote-left"></i>
 		</a>
-		<a href="#tags" title="Your tags">
+		<a href="#tags/list" title="Your tags">
 			<i class="fa fa-tag"></i>
 		</a>
 	</div>
 	<div id="page">
-		<div ng-view class="page-frame"></div>
+		<div class="container-fluid">
+			<div ng-view class="page-frame"></div>
+		</div>
 	</div>
 	<script type="text/javascript" src="{= asset('include/js/jquery-2.0.3.min.js') =} "></script>
 	<script type="text/javascript" src="{= asset('include/js/boostrap.min.js') =} "></script>

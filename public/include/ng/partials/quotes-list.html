@@ -3,3 +3,28 @@
 		{{quote.content}}
 	</li>
 </ul>
+
+<div class="quotes">
+
+	<div ng-repeat="quote in quotes">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<blockquote>
+					<p>
+						{{quote.content}}
+					</p>
+					<small>
+						{{quote.author}}
+						<span ng-if="quote.source">
+							(via <cite><a href="{{quote.source}}">source</a></cite>)
+						</span>
+					</small>
+				</blockquote>
+			</div>
+			<div class="panel-footer">
+				
+			</div>
+		</div>
+	</div>
+
+</div>
