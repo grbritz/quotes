@@ -137,23 +137,159 @@ Route::group(array('prefix' => 'tags'), function(){
 		return Response::make(array(
 			array(
 				'id'	=> 1,
-				'name'	=> 'curiosity'
+				'name'	=> 'Curiosity'
 				),
 			array(
 				'id'	=> 2,
-				'name'	=> 'balance'
+				'name'	=> 'Balance'
 				),
 			array(
 				'id'	=> 3,
-				'name'	=> 'lifestyle'
+				'name'	=> 'Lifestyle'
 				),
 			array(
 				'id'	=> 4,
-				'name'	=> 'learning',
+				'name'	=> 'Learning',
 				),
 			array(
 				'id'	=> 5,
-				'name'	=> 'inspiration'
+				'name'	=> 'Inspiration'
+				),
+			array(
+				'id'	=> 6,
+				'name'	=> 'Lucid'
+				),
+			array(
+				'id'	=> 7,
+				'name'	=> 'Geometry'
+				),
+			array(
+				'id'	=> 8,
+				'name'	=> 'Philosophy'
+				),
+			array(
+				'id'	=> 9,
+				'name'	=> 'Physics'
+				),
+			array(
+				'id'	=> 10,
+				'name'	=> 'Nature'
+				),
+			array(
+				'id'	=> 11,
+				'name'	=> 'Awe'
+				),
+			array(
+				'id'	=> 12,
+				'name'	=> 'Dreams'
+				),
+			array(
+				'id'	=> 13,
+				'name'	=> 'Motivational'
+				),
+			array(
+				'id'	=> 14,
+				'name'	=> 'Happiness'
+				),
+			array(
+				'id'	=> 15,
+				'name'	=> 'Classic'
+				),
+			array(
+				'id'	=> 16,
+				'name'	=> 'Great men'
+				),
+			array(
+				'id'	=> 17,
+				'name'	=> 'Renaissance'
+				),
+			array(
+				'id'	=> 18,
+				'name'	=> 'The Enlightenment'
+				),
+			array(
+				'id'	=> 19,
+				'name'	=> 'European thinkers'
+				),
+			array(
+				'id'	=> 20,
+				'name'	=> 'Eastern philosophy'
+				),
+			array(
+				'id'	=> 21,
+				'name'	=> 'New Age'
+				),
+			array(
+				'id'	=> 22,
+				'name'	=> 'Conspiracy'
+				),
+			array(
+				'id'	=> 23,
+				'name'	=> 'UFO'
+				),
+			array(
+				'id'	=> 24,
+				'name'	=> 'George Costanza'
+				),
+			array(
+				'id'	=> 25,
+				'name'	=> 'Roger Moore'
+				),
+			array(
+				'id'	=> 26,
+				'name'	=> 'Mountains'
+				),
+			array(
+				'id'	=> 27,
+				'name'	=> 'Trees'
+				),
+			array(
+				'id'	=> 28,
+				'name'	=> 'Sun'
+				),
+			array(
+				'id'	=> 29,
+				'name'	=> 'Earth'
+				),
+			array(
+				'id'	=> 30,
+				'name'	=> 'Gaia'
+				),
+			array(
+				'id'	=> 31,
+				'name'	=> 'Celestial'
+				),
+			array(
+				'id'	=> 32,
+				'name'	=> 'Cosmic'
+				),
+			array(
+				'id'	=> 33,
+				'name'	=> 'Universal'
+				),
+			array(
+				'id'	=> 34,
+				'name'	=> 'Patterns'
+				),
+			array(
+				'id'	=> 35,
+				'name'	=> 'Flocking behavior'
+				),
+			array(
+				'id'	=> 36,
+				'name'	=> 'Psychology'
+				),
+			array(
+				'id'	=> 37,
+				'name'	=> 'Sociology'
+				),
+			array(
+				'id'	=> 38,
+				'name'	=> 'Numerology'
+				),
+			array(
+				'id'	=> 39,
+				'name'	=> 'Cheese'
 				)
 			), 200);
 	});
@@ -162,19 +298,159 @@ Route::group(array('prefix' => 'tags'), function(){
 		return Response::make(array(
 			array(
 				'id'	=> 1,
-				'name'	=> 'curiosity'
+				'name'	=> 'Curiosity'
 				),
 			array(
 				'id'	=> 2,
-				'name'	=> 'balance'
+				'name'	=> 'Balance'
 				),
 			array(
 				'id'	=> 3,
-				'name'	=> 'lifestyle'
+				'name'	=> 'Lifestyle'
+				),
+			array(
+				'id'	=> 4,
+				'name'	=> 'Learning',
 				),
 			array(
 				'id'	=> 5,
-				'name'	=> 'inspiration'
+				'name'	=> 'Inspiration'
+				),
+			array(
+				'id'	=> 6,
+				'name'	=> 'Lucid'
+				),
+			array(
+				'id'	=> 7,
+				'name'	=> 'Geometry'
+				),
+			array(
+				'id'	=> 8,
+				'name'	=> 'Philosophy'
+				),
+			array(
+				'id'	=> 9,
+				'name'	=> 'Physics'
+				),
+			array(
+				'id'	=> 10,
+				'name'	=> 'Nature'
+				),
+			array(
+				'id'	=> 11,
+				'name'	=> 'Awe'
+				),
+			array(
+				'id'	=> 12,
+				'name'	=> 'Dreams'
+				),
+			array(
+				'id'	=> 13,
+				'name'	=> 'Motivational'
+				),
+			array(
+				'id'	=> 14,
+				'name'	=> 'Happiness'
+				),
+			array(
+				'id'	=> 15,
+				'name'	=> 'Classic'
+				),
+			array(
+				'id'	=> 16,
+				'name'	=> 'Great men'
+				),
+			array(
+				'id'	=> 17,
+				'name'	=> 'Renaissance'
+				),
+			array(
+				'id'	=> 18,
+				'name'	=> 'The Enlightenment'
+				),
+			array(
+				'id'	=> 19,
+				'name'	=> 'European thinkers'
+				),
+			array(
+				'id'	=> 20,
+				'name'	=> 'Eastern philosophy'
+				),
+			array(
+				'id'	=> 21,
+				'name'	=> 'New Age'
+				),
+			array(
+				'id'	=> 22,
+				'name'	=> 'Conspiracy'
+				),
+			array(
+				'id'	=> 23,
+				'name'	=> 'UFO'
+				),
+			array(
+				'id'	=> 24,
+				'name'	=> 'George Costanza'
+				),
+			array(
+				'id'	=> 25,
+				'name'	=> 'Roger Moore'
+				),
+			array(
+				'id'	=> 26,
+				'name'	=> 'Mountains'
+				),
+			array(
+				'id'	=> 27,
+				'name'	=> 'Trees'
+				),
+			array(
+				'id'	=> 28,
+				'name'	=> 'Sun'
+				),
+			array(
+				'id'	=> 29,
+				'name'	=> 'Earth'
+				),
+			array(
+				'id'	=> 30,
+				'name'	=> 'Gaia'
+				),
+			array(
+				'id'	=> 31,
+				'name'	=> 'Celestial'
+				),
+			array(
+				'id'	=> 32,
+				'name'	=> 'Cosmic'
+				),
+			array(
+				'id'	=> 33,
+				'name'	=> 'Universal'
+				),
+			array(
+				'id'	=> 34,
+				'name'	=> 'Patterns'
+				),
+			array(
+				'id'	=> 35,
+				'name'	=> 'Flocking behavior'
+				),
+			array(
+				'id'	=> 36,
+				'name'	=> 'Psychology'
+				),
+			array(
+				'id'	=> 37,
+				'name'	=> 'Sociology'
+				),
+			array(
+				'id'	=> 38,
+				'name'	=> 'Numerology'
+				),
+			array(
+				'id'	=> 39,
+				'name'	=> 'Cheese'
 				)
 			));
 	});
