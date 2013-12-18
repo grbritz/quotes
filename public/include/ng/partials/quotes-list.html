@@ -1,6 +1,6 @@
 <div class="quotes">
 	<div ng-repeat="quote in quotes">
-		<div class="panel panel-default">
+		<div class="quote panel panel-default">
 			<div class="panel-body">
 				<blockquote>
 					<p>
@@ -15,17 +15,54 @@
 				</blockquote>
 			</div>
 			<div class="panel-footer">
-				<h6 data-toggle="collapse" data-target="#quote{{quote.id}}-tags">
-					<i class="fa fa-caret-right"></i>
-					0 tags
-				</h6>
-				<div id="quote{{quote.id}}-tags" class="collapse">
-					<div class="tags">
-						<span class="label label-default">test</span>
-						<span class="label label-default">test</span>
-						<span class="label label-default">test</span>
-						<span class="label label-default">test</span>
-						<span class="label label-default">test</span>
+				<div class="collapsible">
+					<div class="title" data-toggle="collapse" data-target="#quote{{quote.id}}-tags">
+						<h6>
+							<div class="strikethrough"></div>
+							<span>
+								<i class="fa fa-caret-down"></i>
+								0 tags
+							</span>
+						</h6>
+					</div>
+					<div class="collapse" id="quote{{quote.id}}-tags">
+						<div class="tags">
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+							<span class="label tag label-default">test</span>
+						</div>
 					</div>
 				</div>
 			</div>
