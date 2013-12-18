@@ -84,6 +84,7 @@ Route::group(array('prefix' => 'quotes'), function(){
 	Route::get('/user/{id?}', function($id = 1){
 		return Response::make(array(
 				array(
+				'id'		=> 0,
 				'author'	=> 'Albert Einstein',
 				'source'	=> 'http://quotes.com',
 				'content'	=> 'I have no special talents. I am only passionately curious.',
@@ -97,6 +98,7 @@ Route::group(array('prefix' => 'quotes'), function(){
 									),
 				),
 				array(
+				'id'		=> 1,
 				'author'	=> 'Isaac Newton',
 				'source'	=> 'http://newtonsmind.com',
 				'content'	=> 'If I have seen further, it is by standing on the shoulders of giants.',
@@ -106,6 +108,7 @@ Route::group(array('prefix' => 'quotes'), function(){
 								)
 				),
 				array(
+				'id'		=> 2,
 				'author'	=> 'Socrates',
 				'source'	=> '',
 				'content'	=> 'Beware the barrenness of a busy life.',
