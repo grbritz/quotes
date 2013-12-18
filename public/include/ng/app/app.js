@@ -6,7 +6,8 @@ var quoteApp = angular.module('quoteApp', [
 	'ngRoute',
 	'quoteControllers',
 	'quoteServices',
-	'quoteFilters'
+	'quoteFilters',
+	'quoteDirectives'
 
 ]);
 
