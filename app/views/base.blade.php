@@ -25,6 +25,9 @@
 		<a ng-class="{active: isActive('/discover')}" href="#discover" title="Discover quotes">
 			<i class="fa fa-asterisk"></i>
 		</a>
+		<a ng-class="{active: isActive('/explore')}" href="#explore" title="Explore quotes">
+			<i class="fa fa-search"></i>
+		</a>
 		<a ng-class="{active: isActive('/quotes/list')}" href="#quotes/list" title="Your quotes">
 			<i class="fa fa-quote-left"></i>
 		</a>
