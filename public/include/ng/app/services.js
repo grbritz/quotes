@@ -10,8 +10,11 @@ quoteServices.factory('Quote', ['$resource',
 	}
 ]);
 
-quoteServices.factory('TagResource', ['$resource',
+quoteServices.factory('Tag', ['$resource',
 	function ($resource){
-		return $resource('tags/:source', {source: 'user'});
+		var TagService = {};
+		TagService.resource = $resource('tags/:source', {source: 'user'})
+
+		return TagService;
 	}
 ]);
