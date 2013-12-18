@@ -2,14 +2,15 @@
 	<input name="filter-tags" ng-model="tagFilters" ng-list />
 	<div ng-if="tagFilters" class="panel panel-default">
 		<div class="panel-body">
-			<span ng-repeat="tag in tagFilters" class="label tag label-default">{{tag.name}}</span>
+			<span>tagFilters = {{tagFilters}}</span>
+			<span ng-repeat="tag in tagFilters" class="label tag label-default">{{tag}}</span>
 		</div>
 	</div>
 
 	<div class="panel panel-default">
 		<div class="panel-heading">Tags</div>
 		<div class="panel-body">
-
+			<span ng-repeat="tag in tags | tagFilter:tagFilters" class="label tag label-default">{{tag.name}}</span>
 			<div class="clearfix">
 				
 				<span ng-repeat="tag in tags | tagFilter:tagFilters" class="label tag label-default">
