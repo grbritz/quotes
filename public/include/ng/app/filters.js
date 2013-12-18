@@ -9,7 +9,7 @@ quoteFilters.filter('tagFilter', function(){
 		if(filters && filters.length > 0){
 			return input.filter(function(currentInput) {
 				return filters.filter(function(currentFilter) {
-					return currentInput.name.indexOf(currentFilter) != -1;
+					return currentInput.name.toLowerCase().indexOf(currentFilter.toLowerCase()) != -1;
 				}).length > 0;
 			});
 		}
