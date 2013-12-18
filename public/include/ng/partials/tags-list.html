@@ -10,7 +10,8 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">Tags</div>
 		<div class="panel-body">
-			<span ng-repeat="tag in tags | filter:tagFilter(tagFilters) " class="label tag label-default">{{tag.name}}</span>
+			<!--<span ng-repeat="tag in tags | filter:tagFilter(tagFilters) " class="label tag label-default">{{tag.name}}</span>-->
+			<span ng-repeat="tag in tags | tagFilter:tagFilters" class="label tag label-default">{{tag.name}}</span>
 		</div>
 	<div>
 </div>

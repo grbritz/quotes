@@ -23,7 +23,7 @@ quoteControllers.controller('TagListCtrl', ['$scope', 'Tag',
 		$scope.tags = Tag.resource.query();
 
 
-		$scope.tagFilter = function(filters){
+		/*$scope.tagFilter = function(filters){
 			return function(tag){
 				if(filters){
 					return filters.filter(function(element){
@@ -37,6 +37,6 @@ quoteControllers.controller('TagListCtrl', ['$scope', 'Tag',
 				//return tag.name == filters[0];
 			}
 			//return tag.name == "curiosity";
-		}
+		}*/
 	}
 ]);

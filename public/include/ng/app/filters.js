@@ -4,25 +4,18 @@
 
 var quoteFilters = angular.module('quoteFilters', []);
 
-/*quoteFilters.filter('tagFilter', function(){
+quoteFilters.filter('tagFilter', function(){
 	return function(input, filters) {
-		console.log(input);
-		console.log(filters);
-		return filters.length > 0;
+		if(filters){
+			return input.filter(function(currentInput) {
+				return filters.filter(function(currentFilter) {
+					return currentInput.name.indexOf(currentFilter) != -1;
+				}).length > 0;
+			});
+		}
+		else{
+			return input;
+		}
+	}	
+});	
 
-		/*return tagFilters.filter(function(element){
-			return tag.name == element;
-		}).length > 0;*/
-	//}
-//});
-
-
-/*angular.module('QuoteFilters', []).filter('tagFilter', function(tagFilters) {
-	return function(tag) {
-		return tagFilters.filter(function(element){
-			return tag.name == element;
-		}) > 0;
-		
-		//return tag.name == tagFilter;
-	}
-});*/
