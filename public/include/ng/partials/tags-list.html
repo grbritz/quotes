@@ -1,11 +1,28 @@
+<div class="public-or-user">
+	<a href="#" title="Show yours">
+		<i class="fa fa-user"></i>
+	</a>
+	<a class="active" href="#" title="Show all">
+		<i class="fa fa-group"></i>
+	</a>
+</div>
+<div class="page-header">
+	<h2>Tags</h2>
+</div>
 <div class="tags">
-	<input name="filter-tags" ng-model="tagFilters" ng-list='/ /' />
-	<div ng-if="tagFilters" class="panel panel-default">
-
-	</div>
-
 	<div class="panel panel-default">
-		<div class="panel-heading">Tags</div>
+		<div class="panel-body">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Filter by keywords" name="filter-tags" ng-model="tagFilters" ng-list='/ /' />
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button">
+						<i class="fa fa-search"></i>
+					</button>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
 		<div class="panel-body">
 
 			<div class="clearfix">
@@ -20,7 +37,7 @@
 				</span>
 
 				<!-- edit -->
-				<span class="label tag label-default">
+				<span class="label tag editor label-default">
 					<input type="text" value="Example editing">
 					<span>
 						<i class="fa fa-check clickable"></i>
@@ -29,7 +46,7 @@
 				</span>
 
 				<!-- create (active) -->
-				<span class="label tag label-default">
+				<span class="label tag editor label-default">
 					<input type="text" placeholder="New tag">
 					<span>
 						<i class="fa fa-check clickable"></i>
