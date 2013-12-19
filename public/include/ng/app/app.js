@@ -18,6 +18,10 @@ quoteApp.config(['$routeProvider',
 				templateUrl: 'include/ng/partials/discover.html',
 				controller: 'DiscoverCtrl'
 			})
+			.when('/explore', {
+				templateUrl: 'include/ng/partials/explore.html',
+				controller: 'ExploreCtrl'
+			})
 			.when('/quotes/new', {
 				templateUrl: 'include/ng/partials/quotes-new.html',
 				controller: 'QuoteCreateCtrl'
