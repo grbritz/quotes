@@ -13,3 +13,9 @@ hopes, dreams, & feature creep pile
 - ask a designer's opinion
 
 - animate everything (state changes)
+
+- safe crud client/server parallels
+-- ex: if delete fail, restore
+
+- server side pagination
+-- ex: /public/quotes/list&count=20&page=2
