@@ -42,20 +42,17 @@ quoteDirectives.directive('qtDepTag', function() {
 		});
 
 
+		/**
+		 * Removes a tag from a quote and updates view
+		 * @param  event
+		 * @return void
+		 */
 		element.find("i.remove-tag").click(function(event) {
-			//console.log(attrs);
-
-			/*var quote = scope.quotes.filter(function(qt) {
-				return qt.id == scope.quoteId;
-			});*/
-
-			scope.removeTag(attrs.quoteId, scope.tag.id);
-
-			//quote[0].removeTag(scope.tag.id);
-
+			scope.$apply(scope.removeTag(attrs.quoteId, scope.tag.id));
 		});
 
 
+		
 		element.on("$destroy", function() {
 			
 		});
