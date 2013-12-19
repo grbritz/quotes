@@ -10,21 +10,14 @@
 
 			<div class="clearfix">
 				
-				<span qt-tag ng-repeat="tag in tags | tagFilter:tagFilters" class="label tag label-default">
-					{{tag.name}}
-					<span>
-						<i class="fa fa-pencil clickable"></i>
-						<i class="fa fa-trash-o clickable"></i>
-					</span>
-					<span id="child2"></span><span></span>
-				</span>
+				<qt-ind-tag ng-repeat="tag in tags | tagFilter:tagFilters"></qt-ind-tag>
 
 				<!-- edit -->
 				<span class="label tag label-default">
 					<input type="text" value="Example editing">
 					<span>
-						<i class="fa fa-check clickable"></i>
-						<i class="fa fa-times clickable"></i>
+						<i title="edit" class="fa fa-check clickable"></i>
+						<i title="delete" class="fa fa-times clickable"></i>
 					</span>
 				</span>
 

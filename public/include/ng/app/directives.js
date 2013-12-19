@@ -3,48 +3,58 @@
 /* Directives */
 var quoteDirectives = angular.module('quoteDirectives', []);
 
-quoteDirectives.directive('qtTag', function(){
-
-	function toggle (bool){
-		return bool ? false : true;
-	}
+quoteDirectives.directive('qtIndTag', function(){
 
 	function link(scope, element, attrs) {
 
-			
-
-		element.on("mouseover", function() {
-			element.addClass("hover");
-
-			//Show child elements
+		//Toggle showing controls
+		element.hover(function(event){
+			angular.element(this).find("span:first").addClass("hover");
+		}, function(event){
+			angular.element(this).find("span:first").removeClass("hover");
 		});
 
-		var children = element.children();
-
-		for(var i = 0; i < children.length; i++){
-			var ele = angular.element(children[i]);
-
-			ele.on("mouseover", function(event){
-				event.stopPropagation();
-				console.log("wind?");
-			});
-		}
-
-		element.on("mouseout", function() {
-			element.removeClass("hover");
-		});
 
 		element.on("$destroy", function() {
-			//
+			
 			console.log('tag destroyed');
 		});
 
-		scope.$watch(attrs.qtTag, function() {
+		scope.$watch(attrs.qtIndTag, function() {
 
 		});
 	}
 
 	return {
-		link : link
+		link : link,
+		restrict: 'E',
+		templateUrl: 'include/ng/partials/ind-tag.html'
+	};
+});
+
+quoteDirectives.directive('qtDepTag', function() {
+
+	function link(scope, element, attrs) {
+		//Toggle showing controls
+		element.hover(function(event){
+			angular.element(this).find("span:first").addClass("hover");
+		}, function(event){
+			angular.element(this).find("span:first").removeClass("hover");
+		});
+
+		element.on("$destroy", function() {
+			
+			console.log('tag destroyed');
+		});
+
+		scope.$watch(attrs.qtDepTag, function() {
+
+		});
+	}
+
+	return {
+		link : link,
+		restrict: 'E',
+		templateUrl: 'include/ng/partials/dep-tag.html'
 	};
 });

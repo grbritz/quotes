@@ -7,6 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="{= asset('include/css/font-awesome.min.css') =}">
 	<link rel="stylesheet" type="text/css" href="{= asset('include/css/style.css') =}">
 
+	<script type="text/javascript" src="{= asset('include/js/jquery-2.0.3.min.js') =} "></script>
+
+
 	<script type="text/javascript" src="{= asset('include/ng/lib/angular.min.js') =}"></script>
 	<script type="text/javascript" src="{= asset('include/ng/lib/angular-resource.min.js') =}"></script>
 	<script type="text/javascript" src="{= asset('include/ng/lib/angular-route.min.js') =}"></script>
@@ -37,7 +40,6 @@
 			<div ng-view class="page-frame"></div>
 		</div>
 	</div>
-	<script type="text/javascript" src="{= asset('include/js/jquery-2.0.3.min.js') =} "></script>
 	<script type="text/javascript" src="{= asset('include/js/bootstrap.min.js') =} "></script>
 	<script type="text/javascript" src="{= asset('include/js/scripts.js') =} "></script>
 </body>
