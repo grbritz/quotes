@@ -89,13 +89,31 @@ Route::group(array('prefix' => 'quotes'), function(){
 				'source'	=> 'http://quotes.com',
 				'content'	=> 'I have no special talents. I am only passionately curious.',
 				'tags'		=> array(
-									'id'	=> 5,
-									'name'	=> 'inspiration'
-								),
-								array(
-									'id'	=> 1,
-									'name'	=> 'curiosity'
+									array(
+										'id'	=> 5,
+										'name'	=> 'inspiration'
 									),
+									array(
+										'id'	=> 1,
+										'name'	=> 'curiosity'
+										),
+									array(
+										'id'	=> 6,
+										'name'	=> 'Lucid'
+										),
+									array(
+										'id'	=> 7,
+										'name'	=> 'Geometry'
+										),
+									array(
+										'id'	=> 8,
+										'name'	=> 'Philosophy'
+										),
+									array(
+										'id'	=> 9,
+										'name'	=> 'Physics'
+										),
+								)
 				),
 				array(
 				'id'		=> 1,
@@ -103,8 +121,26 @@ Route::group(array('prefix' => 'quotes'), function(){
 				'source'	=> 'http://newtonsmind.com',
 				'content'	=> 'If I have seen further, it is by standing on the shoulders of giants.',
 				'tags'		=> array(
-									'id'	=> 5,
-									'name'	=> 'inspiration'
+									array(
+										'id'	=> 5,
+										'name'	=> 'inspiration'
+									),
+									array(
+										'id'	=> 6,
+										'name'	=> 'Lucid'
+									),
+									array(
+										'id'	=> 7,
+										'name'	=> 'Geometry'
+										),
+									array(
+										'id'	=> 8,
+										'name'	=> 'Philosophy'
+										),
+									array(
+										'id'	=> 9,
+										'name'	=> 'Physics'
+										),
 								)
 				),
 				array(
@@ -113,12 +149,30 @@ Route::group(array('prefix' => 'quotes'), function(){
 				'source'	=> '',
 				'content'	=> 'Beware the barrenness of a busy life.',
 				'tags'		=> array(
-									'id'	=> 2,
-									'name'	=> 'balance'
-								),
-								array(
-									'id'	=> 3,
-									'name'	=> 'lifestyle'
+									array(
+										'id'	=> 2,
+										'name'	=> 'balance'
+									),
+									array(
+										'id'	=> 3,
+										'name'	=> 'lifestyle'
+									),
+									array(
+										'id'	=> 6,
+										'name'	=> 'Lucid'
+									),
+									array(
+										'id'	=> 7,
+										'name'	=> 'Geometry'
+										),
+									array(
+										'id'	=> 8,
+										'name'	=> 'Philosophy'
+										),
+									array(
+										'id'	=> 9,
+										'name'	=> 'Physics'
+										),
 								)
 				),
 			),

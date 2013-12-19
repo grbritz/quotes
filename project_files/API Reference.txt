@@ -1,0 +1,171 @@
+API Reference
+
+Quotes:
+	GET	public/	->	[{
+						id		: 1,
+						author : "name",
+						source : "http://src.com",
+						content: "quote body"
+						}, {...}, ...]
+	GET public/{:id}	->	[{
+							id		: :id,
+							author : "name",
+							source : "http://src.com",
+							content: "quote body"
+							}]
+
+	GET public/random/	-> [{
+							id		: 1,
+							author : "name",
+							source : "http://src.com",
+							content: "quote body"
+							}]
+
+	GET user/	->	[{
+						id		: 1,
+						author : "name",
+						source : "http://src.com",
+						content: "quote body"
+						}, {...}, ...]
+	GET user/{:id}	->	[{
+							id		: :id,
+							author : "name",
+							source : "http://src.com",
+							content: "quote body"
+							}]
+	GET user/random	->	[{
+							id		: 1,
+							author : "name",
+							source : "http://src.com",
+							content: "quote body"
+							}]
+	POST user/	[{								-> 	if(success) 
+														{
+															data: {
+																id : id,
+																author : "name",
+																source : "http://src.com",
+																content: "quote body"
+															}
+														}
+													else 
+														{
+															data : {},
+															errors : {
+																1 : "author is required"
+															}
+														}
+					author : "name",			
+					source : "http://src.com",
+					content: "quote body"
+				}]
+
+	PUT user/	{								-> 	if(success) 
+														{
+															data: {
+																id : id,
+																author : "name",
+																source : "http://src.com",
+																content: "quote body"
+															}
+														}
+													else 
+														{
+															data : {},
+															errors : {
+																1 : "author is required"
+															}
+					id	: id,									}
+					author : "name",			
+					source : "http://src.com",
+					content: "quote body"
+				}]
+
+	POST user/tag/	{id:id}				-> if(success)
+												{
+													data : {
+														id : id,
+														name : name
+													}
+												}
+											else
+												{
+													data : {},
+													errors : {
+														1 : "id not found"
+													}
+												}
+	DELETE user/tag	{id : id}			-> if(success)
+												{
+													data : {
+														id : id,
+														name : name
+													}
+												},
+											else
+												{
+													data : {
+														id : id,
+														name : name
+													},
+													error : {
+														1 : "id not found"
+													}
+												}
+
+Tags:
+	GET	public/				-> [{
+									id : 1,
+									name : "name" 
+								}, {...}, ...]
+
+	GET user/				-> [{
+									id : 1,
+									name : "name" 
+								}, {...}, ...]
+
+	POST user/	{name : "name"}	->  if(success)
+										{
+											data : {
+												id : id,
+												name : name
+											}
+
+										}
+									else
+										{
+											data : {},
+											errors : {
+												1 : "duplicate tag name"
+											}
+										}
+	PUT user/	{ id : id, name : "name"}	-> if(success)
+												{
+													data : {
+														id : id,
+														name : name
+													}
+
+												}
+											else
+												{
+													data : {},
+													errors : {
+														1 : "duplicate tag name"
+													}
+												}
+	DELETE user/ {id : id}		-> if(success)
+										{
+											data : {
+												id : id,
+												name : name
+											}
+
+										}
+									else
+										{
+											data : {},
+											errors : {
+												1 : "id not found"
+											}
+										}
