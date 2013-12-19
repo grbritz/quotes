@@ -26,6 +26,51 @@
 	border-radius: 0;
 }
 
+.btn-naked {
+	border-radius: 0;
+	color: #333;
+	background-color: #FFF;
+}
+
+.btn-naked:hover,
+.btn-naked:focus,
+.btn-naked:active,
+.btn-naked.active,
+.open .dropdown-toggle.btn-naked {
+	color: #111;
+	background-color: #DDD;
+}
+
+.btn-naked:active,
+.btn-naked.active,
+.open .dropdown-toggle.btn-naked {
+	background-image: none;
+}
+
+.btn-naked.disabled,
+.btn-naked[disabled],
+fieldset[disabled] .btn-naked,
+.btn-naked.disabled:hover,
+.btn-naked[disabled]:hover,
+fieldset[disabled] .btn-naked:hover,
+.btn-naked.disabled:focus,
+.btn-naked[disabled]:focus,
+fieldset[disabled] .btn-naked:focus,
+.btn-naked.disabled:active,
+.btn-naked[disabled]:active,
+fieldset[disabled] .btn-naked:active,
+.btn-naked.disabled.active,
+.btn-naked[disabled].active,
+fieldset[disabled] .btn-naked.active {
+	color: #DDD;
+	background-color: #FFF;
+}
+
+.btn-naked .badge {
+	color: #FFF;
+	background-color: #FFF;
+}
+
 
 /* layout */
 
@@ -116,9 +161,7 @@
 
 #discover-quote {
 	width: 67%;
-	height: 67%;
 	margin: auto;
-	margin-top: 28%;
 }
 #discover-quote .content {
 	font-size: 36px;
