@@ -200,12 +200,14 @@ misc
 	line-height: 1.1em;
 	text-indent: -1px;
 }
+
 .quote .collapsible .title {
 	color: #666666;
 }
 .quote .collapsible .tags {
 	padding: 10px 0 3px;
 }
+
 
 .label.tag {
 	display: block;
@@ -266,4 +268,14 @@ misc
 	margin: 16px 0 24px;
 	margin-left: 1px;
 	color: #999;
+}
+
+
+#newQuoteModal .modal-header,
+#newQuoteModal .modal-footer {
+	border: none;
+}
+#newQuoteModal .modal-body {
+	padding-top: 5px;
+	padding-bottom: 0;
 }
