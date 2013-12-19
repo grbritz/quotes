@@ -41,6 +41,21 @@ quoteDirectives.directive('qtDepTag', function() {
 			angular.element(this).find("span:first").removeClass("hover");
 		});
 
+
+		element.find("i.remove-tag").click(function(event) {
+			//console.log(attrs);
+
+			/*var quote = scope.quotes.filter(function(qt) {
+				return qt.id == scope.quoteId;
+			});*/
+
+			scope.removeTag(attrs.quoteId, scope.tag.id);
+
+			//quote[0].removeTag(scope.tag.id);
+
+		});
+
+
 		element.on("$destroy", function() {
 			
 		});
@@ -53,9 +68,6 @@ quoteDirectives.directive('qtDepTag', function() {
 	return {
 		link : link,
 		restrict: 'E',
-		templateUrl: 'include/ng/partials/dep-tag.html',
-		scope : {
-			quoteId : "=quote"
-		}
+		templateUrl: 'include/ng/partials/dep-tag.html'
 	};
 });
