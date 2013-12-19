@@ -17,7 +17,6 @@ quoteDirectives.directive('qtIndTag', function(){
 
 		element.on("$destroy", function() {
 			
-			console.log('tag destroyed');
 		});
 
 		scope.$watch(attrs.qtIndTag, function() {
@@ -44,7 +43,6 @@ quoteDirectives.directive('qtDepTag', function() {
 
 		element.on("$destroy", function() {
 			
-			console.log('tag destroyed');
 		});
 
 		scope.$watch(attrs.qtDepTag, function() {
@@ -55,6 +53,9 @@ quoteDirectives.directive('qtDepTag', function() {
 	return {
 		link : link,
 		restrict: 'E',
-		templateUrl: 'include/ng/partials/dep-tag.html'
+		templateUrl: 'include/ng/partials/dep-tag.html',
+		scope : {
+			quoteId : "=quote"
+		}
 	};
 });

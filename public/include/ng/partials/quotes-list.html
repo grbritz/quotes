@@ -28,7 +28,7 @@
 					</div>
 					<div class="collapse" id="quote{{quote.id}}-tags">
 						<div class="tags clearfix">
-							<qt-dep-tag ng-repeat="tag in quote.tags"></qt-dep-tag>
+							<qt-dep-tag quote="quote.id" ng-repeat="tag in quote.tags"></qt-dep-tag>
 							
 							<span class="label tag add-new label-default">
 								<span>
