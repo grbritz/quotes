@@ -5,7 +5,7 @@
 }
 
 
-/* layout */
+/* bootstrap tweaks */
 
 .container-fluid {
 	padding-left: 15px;
@@ -13,6 +13,21 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.page-header {
+	margin: 0 0 5px;
+	border: none;
+}
+.page-header h2 {
+	margin: 0;
+}
+
+.panel {
+	border-radius: 0;
+}
+
+
+/* layout */
 
 #navbar {
 	width: 60px;
@@ -92,7 +107,6 @@
 
 .quote.panel {
 	margin-bottom: 15px;
-	border-radius: 0;
 }
 .quote blockquote {
 	margin: 0;
@@ -119,6 +133,12 @@
 	border-radius: 0px;
 	font-size: 12px;
 }
+.label.tag span {
+	display: none;
+}
+.label.tag.hover span {
+	display: inline;
+}
 .label.tag span i {
 	padding-left: 3px;
 }
@@ -127,6 +147,7 @@
 }
 .label.tag input[type=text] {
 	border: none;
+	line-height: normal;
 	font-weight: bold;
 	color: #FFF;
 	background: none;
