@@ -10,22 +10,24 @@
 	<h2>Quotes</h2>
 </div>
 <div class="quotes">
-	<div class="panel panel-default">
-		<div class="panel-body">
-			<div class="input-group">
-				<input type="text" class="form-control" placeholder="Filter by keywords">
-				<span class="input-group-btn">
-					<button class="btn btn-default" type="button">
-						<i class="fa fa-search"></i>
-					</button>
-				</span>
+	<div class="page-filter">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Filter by keywords">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div ng-repeat="quote in quotes">
 		<div class="quote panel panel-default">
 			<div class="panel-body">
-				<div class="pull-right">
+				<div class="controls pull-right">
 					<button type="button" class="btn btn-xs btn-naked" title="Delete quote">
 						<i class="fa fa-trash-o"></i>
 					</button>
@@ -264,7 +266,7 @@
 									<i class="fa fa-times clickable"></i>
 								</span>
 							</span>
-							<span class="label tag add-new label-default">
+							<span class="label tag add-new label-default clickable">
 								<span>
 									<i class="fa fa-plus clickable"></i>
 								</span>

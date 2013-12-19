@@ -10,15 +10,17 @@
 	<h2>Tags</h2>
 </div>
 <div class="tags">
-	<div class="panel panel-default">
-		<div class="panel-body">
-			<div class="input-group">
-				<input type="text" class="form-control" placeholder="Filter by keywords" name="filter-tags" ng-model="tagFilters" ng-list='/ /' />
-				<span class="input-group-btn">
-					<button class="btn btn-default" type="button">
-						<i class="fa fa-search"></i>
-					</button>
-				</span>
+	<div class="page-filter">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Filter by keywords">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -55,7 +57,7 @@
 				</span>
 
 				<!-- create -->
-				<span class="label tag add-new label-default">
+				<span class="label tag add-new label-default clickable">
 					<span>
 						<i class="fa fa-plus clickable"></i>
 					</span>

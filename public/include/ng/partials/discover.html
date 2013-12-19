@@ -7,7 +7,7 @@
 	</a>
 </div>
 <div id="discover-quote">
-	<div class="content">Far better is it to dare mighty things, to win glorious triumphs, even though checkered by failure... than to rank with those poor spirits who neither enjoy nor suffer much, because they live in a gray twilight that knows not victory nor defeat.</div>
+	<div class="content">Success is not final, failure is not fatal. It is the courage to continue that counts.</div>
 	<div class="author">
 		&mdash; Theodore Roosevelt
 	</div>
@@ -28,7 +28,7 @@
 	// decide if center or overflow
 	function sizeToFit($quote, $win) {
 		if ($quote.innerHeight() > $win.innerHeight()) {
-			$el.css({'margin-top': '20px'});
+			$quote.css({'margin-top': '30px'});
 		} else {
 			verticallyCenter($quote, $win);
 		}
