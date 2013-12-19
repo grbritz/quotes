@@ -5,8 +5,6 @@ var quoteDirectives = angular.module('quoteDirectives', []);
 
 quoteDirectives.directive('qtTag', function(){
 
-	var isHovered = false;
-
 	function toggle (bool){
 		return bool ? false : true;
 	}
@@ -16,15 +14,7 @@ quoteDirectives.directive('qtTag', function(){
 			
 
 		element.on("mouseover", function() {
-			if(this.hasAttribute("qt-tag")){
-				console.log("win!");
-			}
-
-			if(isHovered){
-				return;
-			}
-			
-			isHovered = true;
+			element.addClass("hover");
 
 			//Show child elements
 		});
@@ -41,7 +31,7 @@ quoteDirectives.directive('qtTag', function(){
 		}
 
 		element.on("mouseout", function() {
-			//isHovered = false;
+			element.removeClass("hover");
 		});
 
 		element.on("$destroy", function() {
