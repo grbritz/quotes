@@ -257,17 +257,22 @@ misc
 		width: 75%;
 	}
 }
-#discover-quote .content {
+#discover-quote blockquote {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#discover-quote blockquote p {
 	font-size: 36px;
 	font-family: Times, serif;
 	font-weight: bold;
 	line-height: 1.1em;
 	text-indent: -1px;
 }
-#discover-quote .author {
+#discover-quote blockquote small {
 	margin: 16px 0 24px;
 	margin-left: 1px;
-	color: #999;
+	font-size: 14px;
 }
 
 
