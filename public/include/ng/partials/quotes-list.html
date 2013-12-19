@@ -10,21 +10,32 @@
 	<h2>Quotes</h2>
 </div>
 <div class="quotes">
-	<div class="panel panel-default">
-		<div class="panel-body">
-			<div class="input-group">
-				<input type="text" class="form-control" placeholder="Filter by keywords">
-				<span class="input-group-btn">
-					<button class="btn btn-default" type="button">
-						<i class="fa fa-search"></i>
-					</button>
-				</span>
+	<div class="page-filter">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Filter by keywords">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div ng-repeat="quote in quotes">
 		<div class="quote panel panel-default">
 			<div class="panel-body">
+				<div class="controls pull-right">
+					<button type="button" class="btn btn-xs btn-naked" title="Delete quote">
+						<i class="fa fa-trash-o"></i>
+					</button>
+					<br>
+					<button type="button" class="btn btn-xs btn-naked" title="Edit quote">
+						<i class="fa fa-pencil"></i>
+					</button>					
+				</div>
 				<blockquote>
 					<p>
 						{{quote.content}}
@@ -47,7 +58,7 @@
 						<div class="tags clearfix">
 							<qt-dep-tag quote-id="{{quote.id}}" ng-repeat="tag in quote.tags"></qt-dep-tag>
 							
-							<span class="label tag add-new label-default">
+							<span class="label tag add-new label-default clickable">
 								<span>
 									<i class="fa fa-plus clickable"></i>
 								</span>
@@ -58,4 +69,52 @@
 			</div>
 		</div>
 	</div>
+
+
+		<div class="quote edit panel panel-default">
+			<div class="panel-body">
+				<form role="form">
+					<div class="form-group">
+						<label for="create-quotation-content" class="control-label">
+							Content
+						</label>
+						<textarea class="form-control" rows="3" id="create-quotation-content">Success is not final, failure is not fatal. It is the courage to continue that counts.</textarea>
+					</div>
+					<div class="form-group">
+						<label for="create-author-name" class="control-label">
+							Author
+						</label>
+						<input type="text" class="form-control" id="create-author-name" value="Theodore Roosevelt">
+					</div>
+					<div class="form-group">
+						<label for="create-source-url" class="control-label">
+							Source
+						</label>
+						<input type="text" class="form-control" id="create-source-url" value="http://teddy.com/">
+					</div>
+					<div class="controls pull-right">
+						<button type="button" class="btn btn-naked" title="Cancel">
+							<i class="fa fa-times"></i>
+						</button>
+						<button type="button" class="btn btn-naked" title="Save">
+							<i class="fa fa-check"></i>
+						</button>		
+					</div>
+				</form>
+			</div>
+			<div class="panel-footer">
+				<div class="collapsible">
+					<div class="title clickable" data-toggle="collapse" data-target="#quoteX-tags">
+						<!--<i class="fa fa-caret-down clickable"></i>-->
+						0 tags
+					</div>
+					<div class="collapse" id="quoteX-tags">
+						<div class="tags clearfix">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 </div>
