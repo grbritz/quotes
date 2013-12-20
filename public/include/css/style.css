@@ -195,10 +195,10 @@ misc
 }
 .quote blockquote p {
 	margin-bottom: 6px;
-	font-family: Times, serif;
+	/*font-family: Times, serif;
 	font-size: 22px;
 	line-height: 1.1em;
-	text-indent: -1px;
+	text-indent: -1px;*/
 }
 
 .quote .collapsible .title {

@@ -1,0 +1,21 @@
+hopes, dreams, & feature creep pile
+
+- merge/dupe engine for public quotes & tags
+-- no dupes on "view all" quotes n tags
+-- check for dupes on "create new" quote or tag
+
+- "verified" quotes get badge & lock
+-- check w/ wikiquote & king county lib
+-- allow "request for change" messages
+
+- "add new" to tag name dropdown for adding existing tags to quotes
+
+- ask a designer's opinion
+
+- animate everything (state changes)
+
+- safe crud client/server parallels
+-- ex: if delete fail, restore
+
+- server side pagination
+-- ex: /public/quotes/list&count=20&page=2

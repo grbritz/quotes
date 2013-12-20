@@ -48,7 +48,6 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					<h2 class="modal-title" id="newQuoteModalLabel">New quote</h2>
 				</div>
 				<div class="modal-body">
@@ -70,6 +69,18 @@
 								Source
 							</label>
 							<input type="text" class="form-control" id="create-source-url" placeholder="URL">
+						</div>
+						<div class="form-group">
+							<label class="control-label">
+								Tags
+							</label>
+							<div class="tags clearfix">
+								<span class="label tag add-new label-default clickable">
+									<span>
+										<i class="fa fa-plus clickable"></i>
+									</span>
+								</span>
+							</div>
 						</div>
 					</form>
 				</div>
