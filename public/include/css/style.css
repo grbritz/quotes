@@ -222,8 +222,16 @@ misc
 	background: #666666;
 }
 .label.tag span {
-	display: none;
+	/*display: none;*/
 }
+.label.tag span i {
+	color:#ccc;
+}
+.label.tag span i:hover {
+	color:#fff;
+}
+
+
 .label.tag.hover span,
 .label.tag.editor span,
 .label.tag.add-new span {

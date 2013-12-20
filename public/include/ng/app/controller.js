@@ -19,6 +19,8 @@ quoteControllers.controller('QuoteListCtrl', ['$scope', 'Quote',
 
 		$scope.removeTag = function (quoteId, tagId) {
 			//TODO : sync this change with the server
+			
+			
 			$scope.quotes = $scope.quotes.map(function(ele, ind) {
 				if(ele.id == quoteId) {
 					ele.tags = ele.tags.filter(function(ele2) {
@@ -27,6 +29,10 @@ quoteControllers.controller('QuoteListCtrl', ['$scope', 'Quote',
 				}
 				return ele;
 			});
+
+			//Server.update('user/quote/quoteId,' ta)
+
+
 		};
 	}
 ]);

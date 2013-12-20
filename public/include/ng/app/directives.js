@@ -9,9 +9,9 @@ quoteDirectives.directive('qtIndTag', function(){
 
 		//Toggle showing controls
 		element.hover(function(event){
-			angular.element(this).find("span:first").addClass("hover");
+			//angular.element(this).find("span:first").addClass("hover");
 		}, function(event){
-			angular.element(this).find("span:first").removeClass("hover");
+			//angular.element(this).find("span:first").removeClass("hover");
 		});
 
 
@@ -36,9 +36,9 @@ quoteDirectives.directive('qtDepTag', function() {
 	function link(scope, element, attrs) {
 		//Toggle showing controls
 		element.hover(function(event){
-			angular.element(this).find("span:first").addClass("hover");
+			//angular.element(this).find("span:first").addClass("hover");
 		}, function(event){
-			angular.element(this).find("span:first").removeClass("hover");
+			//angular.element(this).find("span:first").removeClass("hover");
 		});
 
 
@@ -52,7 +52,7 @@ quoteDirectives.directive('qtDepTag', function() {
 		});
 
 
-		
+
 		element.on("$destroy", function() {
 			
 		});
