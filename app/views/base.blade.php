@@ -70,6 +70,18 @@
 							</label>
 							<input type="text" class="form-control" id="create-source-url" placeholder="URL">
 						</div>
+						<div class="form-group">
+							<label class="control-label">
+								Tags
+							</label>
+							<div class="tags clearfix">
+								<span class="label tag add-new label-default clickable">
+									<span>
+										<i class="fa fa-plus clickable"></i>
+									</span>
+								</span>
+							</div>
+						</div>
 					</form>
 				</div>
 				<div class="modal-footer">
