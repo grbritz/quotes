@@ -14,7 +14,7 @@
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Filter by keywords" ng-list>
+					<input type="text" class="form-control" placeholder="Filter by keywords" ng-model="quoteFilters" ng-list='/ /'>
 					<span class="input-group-btn">
 						<button class="btn btn-default" type="button">
 							<i class="fa fa-search"></i>
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 	</div>
-	<div ng-repeat="quote in quotes">
+	<div ng-repeat="quote in quotes | greedySearch:quoteFilters">
 		<div class="quote panel panel-default">
 			<div class="panel-body">
 				<div class="controls pull-right">

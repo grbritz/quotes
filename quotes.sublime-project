@@ -2,7 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "/Users/graemebritz/projects/MAMP/quotes"
+			"follow_symlinks": true,
+			"path": "."
 		}
 	]
 }

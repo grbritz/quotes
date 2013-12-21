@@ -6,7 +6,7 @@ var quoteServices = angular.module('quoteServices', ['ngResource']);
 
 quoteServices.factory('Quote', ['$resource',
 	function ($resource) {
-		var QuotesService = {
+		/*var QuotesService = {
 			all : function () {
 					return $resource('quotes/public').query();
 				},
@@ -43,7 +43,7 @@ quoteServices.factory('Quote', ['$resource',
 
 		QuotesService
 
-		return QuotesService;
+		return QuotesService;*/
 		return $resource('quotes/:source', {source: 'user'});
 	}
 ]);

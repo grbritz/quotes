@@ -29,7 +29,7 @@
 
 			<div class="clearfix">
 				
-				<qt-ind-tag ng-repeat="tag in tags | tagFilter:tagFilters"></qt-ind-tag>
+				<qt-ind-tag ng-repeat="tag in tags | greedySearch:tagFilters"></qt-ind-tag>
 
 				<!-- edit -->
 				<span class="label tag editor label-default">

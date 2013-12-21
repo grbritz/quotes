@@ -31,7 +31,8 @@ Quotes:
 							id		: :id,
 							author : "name",
 							source : "http://src.com",
-							content: "quote body"
+							content: "quote body",
+							tags : [{}]
 							}]
 	GET user/random	->	[{
 							id		: 1,
