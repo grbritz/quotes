@@ -45,22 +45,38 @@ quoteControllers.controller('QuoteListCtrl', ['$scope', 'Quote',
 quoteControllers.controller('TagListCtrl', ['$scope', 'Tag', 
 	function ($scope, Tag) {
 
-		
-
 
 		$scope.tags = Tag.resource.query();
 		$scope.removeTagIcon = "fa-trash-o";
+		$scope.confirmDeleteTags = false;
+		$scope.tagsToDelete = [];
 
 		$scope.removeTag = function(removeInfo) {
-
 			var tagId = removeInfo.tagId;
-
+			$scope.confirmDeleteTags = true;
+			$scope.tagsToDelete.push(tagId);
+			
 			$scope.tags = $scope.tags.filter(function(ele) {
 				return ele.id != tagId;
 			});
 		};
 
+		$scope.deleteTags = function() {
+			
+			// TODO: tell server to remove each tag in tag list
+			// foreach id:tagsToDelete: DELETE tags/user/{{id}}
+			$scope.confirmDeleteTags = false;
+		};
 
+		$scope.cancelDeleteTags = function() {
+			$scope.confirmDeleteTags = false;
+			$scope.tags = Tag.resource.query();
+		};
+
+
+
+
+		
 
 	}
 ]);
