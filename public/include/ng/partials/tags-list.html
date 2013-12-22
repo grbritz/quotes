@@ -29,13 +29,12 @@
 
 			<div class="clearfix">
 				
-				<qt-ind-tag ng-repeat="tag in tags | greedySearch:tagFilters"></qt-ind-tag>
+				<qt-tag ng-repeat="tag in tags | greedySearch:tagFilters"></qt-ind-tag>
 
 				<!-- edit -->
 				<span class="label tag editor label-default">
 					<input type="text" value="Example editing">
 					<span>
-						<i title="edit" class="fa fa-check clickable"></i>
 						<i title="delete" class="fa fa-times clickable"></i>
 					</span>
 				</span>

@@ -17,8 +17,12 @@ quoteControllers.controller('QuoteListCtrl', ['$scope', 'Quote',
 	function ($scope, Quote) {
 		$scope.quotes = Quote.query();
 		$scope.isCollapsed = false;
+		$scope.removeTagIcon = "fa-times";
 
-		$scope.removeTag = function (quoteId, tagId) {
+		$scope.removeTag = function (removeInfo) {
+			var quoteId = removeInfo.quoteId;
+			var tagId = removeInfo.tagId;
+
 			//TODO : sync this change with the server
 			
 			
@@ -39,7 +43,38 @@ quoteControllers.controller('QuoteListCtrl', ['$scope', 'Quote',
 ]);
 
 quoteControllers.controller('TagListCtrl', ['$scope', 'Tag', 
-	function ($scope, Tag){
+	function ($scope, Tag) {
+
+		
+
+
 		$scope.tags = Tag.resource.query();
+		$scope.removeTagIcon = "fa-trash-o";
+
+		$scope.removeTag = function(removeInfo) {
+
+			var tagId = removeInfo.tagId;
+
+			$scope.tags = $scope.tags.filter(function(ele) {
+				return ele.id != tagId;
+			});
+		};
+
+
+
 	}
 ]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
