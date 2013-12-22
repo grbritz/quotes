@@ -24,7 +24,7 @@
 			</div>
 		</div>
 	</div>
-	<div ng-repeat="quote in quotes | greedySearch:quoteFilters">
+	<div ng-repeat="quote in quotes | greedySearch:quoteFilters" ng-init="quote.isCollapsed = true">
 		<div class="quote panel panel-default">
 			<div class="panel-body">
 				<div class="controls pull-right">
@@ -49,12 +49,12 @@
 				</blockquote>
 			</div>
 			<div class="panel-footer">
-				<div class="collapsible">
-					<div class="title clickable" data-toggle="collapse" data-target="#quote{{quote.id}}-tags">
-						<!--<i class="fa fa-caret-down clickable"></i>-->
-						23 tags
+				<div>
+					<div class="title clickable" ng-click="quote.isCollapsed = !quote.isCollapsed">
+						<i class="fa clickable" ng-class="{ 'fa-caret-down': !quote.isCollapsed, 'fa-caret-right': quote.isCollapsed}"></i>
+						{{quote.tags.length}} tags
 					</div>
-					<div class="collapse" id="quote{{quote.id}}-tags">
+					<div collapse="quote.isCollapsed">
 						<div class="tags clearfix">
 							<qt-dep-tag quote-id="{{quote.id}}" ng-repeat="tag in quote.tags"></qt-dep-tag>
 							
@@ -69,7 +69,6 @@
 			</div>
 		</div>
 	</div>
-
 
 		<div class="quote edit panel panel-default">
 			<div class="panel-body">

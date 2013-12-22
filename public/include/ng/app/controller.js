@@ -16,6 +16,7 @@ quoteControllers.controller('NavCtrl', ['$scope', '$location',
 quoteControllers.controller('QuoteListCtrl', ['$scope', 'Quote',
 	function ($scope, Quote) {
 		$scope.quotes = Quote.query();
+		$scope.isCollapsed = false;
 
 		$scope.removeTag = function (quoteId, tagId) {
 			//TODO : sync this change with the server

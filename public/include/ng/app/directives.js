@@ -27,7 +27,8 @@ quoteDirectives.directive('qtIndTag', function(){
 	return {
 		link : link,
 		restrict: 'E',
-		templateUrl: 'include/ng/partials/ind-tag.html'
+		replace : true,
+		templateUrl: 'include/ng/partials/directives/ind-tag.html'
 	};
 });
 
@@ -65,6 +66,7 @@ quoteDirectives.directive('qtDepTag', function() {
 	return {
 		link : link,
 		restrict: 'E',
-		templateUrl: 'include/ng/partials/dep-tag.html'
+		replace : true,
+		templateUrl: 'include/ng/partials/directives/dep-tag.html'
 	};
 });

@@ -7,7 +7,9 @@ var quoteApp = angular.module('quoteApp', [
 	'quoteControllers',
 	'quoteServices',
 	'quoteFilters',
-	'quoteDirectives'
+	'quoteDirectives',
+	'ui.bootstrap',
+
 
 ]);
 

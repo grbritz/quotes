@@ -12,6 +12,9 @@ utility
 bootstrap tweaks 
 */
 
+/* To make AngularUI bootstrap components work */
+.nav, .pagination, .carousel a { cursor: pointer; }
+
 .container-fluid {
 	padding-left: 15px;
 	padding-right: 15px;
