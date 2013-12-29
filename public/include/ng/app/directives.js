@@ -35,3 +35,29 @@ quoteDirectives.directive('qtTag', function() {
 		templateUrl: 'include/ng/partials/directives/tag.html'
 	};
 });
+
+quoteDirectives.directive('qtNewTag', function() {
+	function link(scope, element, attrs) {
+		var isActive = false;
+	}
+
+	return {
+		link : link,
+		restrict: 'E',
+		replace : true,
+		templateUrl: 'include/ng/partials/directives/new-tag.html'
+	};
+});
+
+quoteDirectives.directive('qtCreateableTag', function() {
+	function link(scope, element, attrs) {
+
+	}
+
+	return {
+		link : link,
+		restrict : 'E',
+		replace: true,
+		templateUrl : 'include/ng/partials/directives/createable-tag.html'
+	};
+});

@@ -1,11 +1,3 @@
-<div class="public-or-user">
-	<a href="#" title="Show yours">
-		<i class="fa fa-user"></i>
-	</a>
-	<a class="active" href="#" title="Show all">
-		<i class="fa fa-group"></i>
-	</a>
-</div>
 <div class="page-header">
 	<h2>Tags</h2>
 </div>
@@ -29,7 +21,7 @@
 
 			<div class="clearfix">
 				
-				<qt-tag ng-repeat="tag in tags | greedySearch:tagFilters"></qt-ind-tag>
+				<qt-tag ng-repeat="tag in tags | greedySearch:tagFilters"></qt-tag>
 
 				<!-- edit -->
 				<span class="label tag editor label-default">

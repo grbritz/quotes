@@ -13,9 +13,9 @@ quoteControllers.controller('NavCtrl', ['$scope', '$location',
 	}
 ]);
 
-quoteControllers.controller('QuoteListCtrl', ['$scope', 'Quote',
-	function ($scope, Quote) {
-		$scope.quotes = Quote.query();
+quoteControllers.controller('QuoteListCtrl', ['$scope', 'UserQuote',
+	function ($scope, UserQuote) {
+		$scope.quotes = UserQuote.query();
 		$scope.isCollapsed = false;
 		$scope.removeTagIcon = "fa-times";
 
@@ -24,8 +24,6 @@ quoteControllers.controller('QuoteListCtrl', ['$scope', 'Quote',
 			var tagId = removeInfo.tagId;
 
 			//TODO : sync this change with the server
-			
-			
 			$scope.quotes = $scope.quotes.map(function(ele, ind) {
 				if(ele.id == quoteId) {
 					ele.tags = ele.tags.filter(function(ele2) {
@@ -73,12 +71,17 @@ quoteControllers.controller('TagListCtrl', ['$scope', 'Tag',
 			$scope.tags = Tag.resource.query();
 		};
 
-
-
-
-		
-
 	}
+]);
+
+quoteControllers.controller('DiscoverCtrl', ['$scope', 'PublicQuotes',
+	function($scope, PublicQuotes) {
+		$scope.randomQuote =  PublicQuotes.random();
+
+		$scope.newQuote = function() {
+			$scope.randomQuote = PublicQuotes.random();
+		};
+	}	
 ]);
 
 
