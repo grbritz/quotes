@@ -5,48 +5,24 @@
  */
 
 
+
 /**
- * First, we include the Twitter Bootstrap LESS files. Only the ones used in the
- * project should be imported as the rest are just wasting space.
+ * Import vendor less files
  */
-
-@import '../../vendor/bootstrap/less/mixins.less';
-@import '../../vendor/bootstrap/less/reset.less';
-@import '../../vendor/bootstrap/less/utilities.less';
-@import '../../vendor/bootstrap/less/scaffolding.less';
-@import '../../vendor/bootstrap/less/type.less';
-@import '../../vendor/bootstrap/less/grid.less';
-@import '../../vendor/bootstrap/less/layouts.less';
-@import '../../vendor/bootstrap/less/navs.less';
-@import '../../vendor/bootstrap/less/navbar.less';
-@import '../../vendor/bootstrap/less/buttons.less';
-@import '../../vendor/bootstrap/less/button-groups.less';
-@import '../../vendor/bootstrap/less/dropdowns.less';
-@import '../../vendor/bootstrap/less/alerts.less';
-@import '../../vendor/bootstrap/less/forms.less';
-@import '../../vendor/bootstrap/less/modals.less';
-@import '../../vendor/bootstrap/less/pagination.less';
-@import '../../vendor/bootstrap/less/pager.less';
-@import '../../vendor/bootstrap/less/popovers.less';
-@import '../../vendor/bootstrap/less/utilities.less';
-@import '../../vendor/bootstrap/less/media.less';
-@import '../../vendor/bootstrap/less/close.less';
-@import '../../vendor/bootstrap/less/scaffolding';
-@import '../../vendor/bootstrap/less/tooltip.less';
-@import '../../vendor/bootstrap/less/wells.less';
-@import '../../vendor/bootstrap/less/responsive-767px-max.less';
-@import '../../vendor/bootstrap/less/responsive-768px-979px.less';
-@import '../../vendor/bootstrap/less/responsive-navbar.less';
-@import '../../vendor/bootstrap/less/responsive-utilities.less';
+@import '../../vendor/bootstrap/less/bootstrap.less';
+@import '../../vendor/font-awesome/less/font-awesome.less';
 
 
 /**
- * This is our main variables file. It in turn imports the `variables` file from
- * Twitter Bootstrap. We must include it last so we can overwrite any variable
- * definitions in our imported stylesheets.
+ * This is our main variables file. It in turn imports variables needed for
+ * any vendor specific less files.
  */
 
 @import 'variables.less';
+
+/**
+ * Application wide style definitions
+ */
 
 /* 
 utility 
@@ -358,5 +334,4 @@ misc
  * TODO: In a later version of this boilerplate, I'd like to automate this.
  */
 
-@import '../app/home/home.less';
 
