@@ -1,8 +1,7 @@
-angular.module('ngBoilerplate', [
+angular.module('quotes', [
   'templates-app',
   'templates-common',
-  'ngBoilerplate.home',
-  'ngBoilerplate.about',
+  'qt.discover',
   'ui.state',
   'ui.route'
 ]).config([

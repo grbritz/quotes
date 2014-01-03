@@ -1,8 +1,9 @@
-angular.module( 'ngBoilerplate', [
+angular.module( 'quotes', [
   'templates-app',
   'templates-common',
-  'ngBoilerplate.home',
-  'ngBoilerplate.about',
+  'qt.discover',
+ // 'qt.quotes',
+ // 'qt.tags',
   'ui.state',
   'ui.route'
 ])
@@ -12,6 +13,7 @@ angular.module( 'ngBoilerplate', [
 })
 
 .run( function run () {
+
 })
 
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {

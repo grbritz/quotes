@@ -1,20 +1,11 @@
 <!DOCTYPE html>
-<html ng-app="ngBoilerplate" ng-controller="AppCtrl">
+<html ng-app="quotes" ng-controller="AppCtrl">
   <head>
     <title ng-bind="pageTitle"></title>
-
-    <!-- social media tags -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@joshdmiller">
-    <meta name="twitter:title" content="ngBoilerplate">
-    <meta name="twitter:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
-    <meta name="twitter:creator" content="@joshdmiller">
-    <meta name="twitter:image:src" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846">
-    <meta property="og:title" content="ngBoilerplate" />
+    <meta property="og:title" content="quotes" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://bit.ly/ngBoilerplate" />
-    <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846" />
-    <meta property="og:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+    <meta property="og:description" content="Discover, catalog, and remember the quotes that are important to you.">
 
     <!-- font awesome from BootstrapCDN -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -31,78 +22,78 @@
     </script>
   </head>
   <body>
-    <div class="container">
-      <div class="masthead">
-        <h3 class="muted">ng-boilerplate <small><a
-              href="http://github.com/joshdmiller/ng-boilerplate/blob/master/CHANGELOG.md">v0.3.1</a></small></h3>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <ul class="nav">
-                <li ui-route="/home" ng-class="{active:$uiRoute}">
-                  <a href="#/home">
-                    <i class="icon-home"></i>
-                    Home
-                  </a>
-                </li>
-                <li ui-route="/about" ng-class="{active:$uiRoute}">
-                  <a href="#/about">
-                    <i class="icon-info-sign"></i>
-                    What is it?
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/joshdmiller/ng-boilerplate#readme">
-                    <i class="icon-book"></i>
-                    Read the Docs
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/joshdmiller/ng-boilerplate">
-                    <i class="icon-github-alt"></i>
-                    Github
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/joshdmiller/ng-boilerplate/issues">
-                    <i class="icon-comments"></i>
-                    Support
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div id="navbar">
+                <div class="inner">
+                        <a href="" title="Create a quote" data-toggle="modal" data-target="#newQuoteModal">
+                                <i class="fa fa-plus"></i>
+                        </a>
+                        <a ng-class="{active: isActive('/quotes/list')}" href="#quotes/list" title="Your quotes">
+                                <i class="fa fa-quote-left"></i>
+                        </a>
+                        <a ng-class="{active: isActive('/tags/list')}" href="#tags/list" title="Your tags">
+                                <i class="fa fa-tags"></i>
+                        </a>
+                        <a ng-class="{active: isActive('/discover')}" href="#discover" title="Discover quotes">
+                                <i class="fa fa-random"></i>
+                        </a>
+                </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container" ui-view="main"></div>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-inner">
-          <ul class="social">
-            <li><a target="_blank" href="http://gplus.to/joshdmiller"><i class="icon-google-plus-sign"></i></a></li>
-            <li><a target="_blank" href="http://twitter.com/joshdmiller"><i class="icon-twitter-sign"></i></a></li>
-            <li><a target="_blank" href="http://linkedin.com/in/joshdmiller"><i class="icon-linkedin-sign"></i></a></li>
-            <li><a target="_blank" href="http://github.com/joshdmiller/ng-boilerplate"><i class="icon-github-sign"></i></a></li>
-          </ul>
-          
-
-          <p>
-            (c) 2013 Josh David Miller. 
-            <a href="http://github.com/joshdmiller/ng-boilerplate/fork_select">Fork this</a>
-            to kickstart your next project.
-            <br />
-            ng-boilerplate is based on
-            <a href="http://www.angularjs.org">AngularJS</a>,
-            <a href="http://getbootstrap.com">Bootstrap</a>, 
-            <a href="http://angular-ui.github.com/bootstrap">UI Bootstrap</a>,
-            and 
-            <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>.        
-          </p>
+        <div id="page">
+                <div class="container-fluid">
+                        <div ng-view class="page-frame"></div>
+                </div>
         </div>
-      </div>
-    </footer>
+        <!-- New quote modal -->
+        <div class="modal fade" id="newQuoteModal" tabindex="-1" role="dialog" aria-labelledby="newQuoteModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <h2 class="modal-title" id="newQuoteModalLabel">New quote</h2>
+                                </div>
+                                <div class="modal-body">
+                                        <form role="form">
+                                                <div class="form-group">
+                                                        <label for="create-quotation-content" class="control-label">
+                                                                Content
+                                                        </label>
+                                                        <textarea class="form-control" rows="4" id="create-quotation-content" placeholder="Text"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                        <label for="create-author-name" class="control-label">
+                                                                Author
+                                                        </label>
+                                                        <input type="text" class="form-control" id="create-author-name" placeholder="Name">
+                                                </div>
+                                                <div class="form-group">
+                                                        <label for="create-source-url" class="control-label">
+                                                                Source
+                                                        </label>
+                                                        <input type="text" class="form-control" id="create-source-url" placeholder="URL">
+                                                </div>
+                                                <div class="form-group">
+                                                        <label class="control-label">
+                                                                Tags
+                                                        </label>
+                                                        <div class="tags clearfix">
+                                                                <span class="label tag add-new label-default clickable">
+                                                                        <span>
+                                                                                <i class="fa fa-plus clickable"></i>
+                                                                        </span>
+                                                                </span>
+                                                        </div>
+                                                </div>
+                                        </form>
+                                </div>
+                                <div class="modal-footer">
+                                        <button type="button" class="btn btn-lg btn-naked" data-dismiss="modal">
+                                                <i class="fa fa-times"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-lg btn-naked">
+                                                <i class="fa fa-check"></i>
+                                        </button>
+                                </div>
+                        </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
   </body>
 </html>

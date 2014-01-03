@@ -1,4 +1,4 @@
-angular.module('templates-app', ['about/about.tpl.html', 'home/home.tpl.html']);
+angular.module('templates-app', ['about/about.tpl.html', 'discover/discover.tpl.html', 'home/home.tpl.html']);
 
 angular.module("about/about.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("about/about.tpl.html",
@@ -268,6 +268,31 @@ angular.module("about/about.tpl.html", []).run(["$templateCache", function($temp
     "</div>\n" +
     "\n" +
     "");
+}]);
+
+angular.module("discover/discover.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("discover/discover.tpl.html",
+    "<div id=\"discover-quote\">\n" +
+    "	<blockquote>\n" +
+    "		<p>\n" +
+    "			{{randomQuote.content}}\n" +
+    "		</p>\n" +
+    "		<small>\n" +
+    "			{{randomQuote.author}}\n" +
+    "			<span>\n" +
+    "				(via <cite><a href=\"http://church.com\" target=\"_blank\">source</a></cite>)\n" +
+    "			</span>\n" +
+    "		</small>\n" +
+    "	</blockquote>\n" +
+    "	<div class=\"controls\">\n" +
+    "		<button type=\"button\" ng-click=\"newQuote()\" class=\"btn btn-lg btn-naked\" title=\"Roll again\">\n" +
+    "			<i class=\"fa fa-random\"></i>\n" +
+    "		</button>\n" +
+    "		<button type=\"button\" class=\"btn btn-lg btn-naked\" title=\"Save quote\">\n" +
+    "			<i class=\"fa fa-download\"></i>\n" +
+    "		</button>\n" +
+    "	</div>\n" +
+    "</div>");
 }]);
 
 angular.module("home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
