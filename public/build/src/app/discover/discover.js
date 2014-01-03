@@ -14,11 +14,14 @@ angular.module('qt.discover', ['ui.router']).config([
   }
 ]).controller('DiscoverCtrl', [
   '$scope',
-  'PublicQuotes',
-  function DiscoverCtrl($scope, PublicQuotes) {
-    $scope.randomQuote = PublicQuotes.random();
+  'QuoteService',
+  function DiscoverCtrl($scope, QuoteService) {
+    var Quotes = new QuoteService('public');
     $scope.newQuote = function () {
-      $scope.randomQuote = PublicQuotes.random();
+      Quotes.random().then(function (quote) {
+        $scope.randomQuote = quote;
+      });
     };
+    $scope.newQuote();
   }
 ]);

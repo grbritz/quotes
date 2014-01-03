@@ -27,14 +27,14 @@ angular.module("discover/discover.tpl.html", []).run(["$templateCache", function
 
 angular.module("quotes/quotes.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("quotes/quotes.tpl.html",
-    "<!--<div class=\"public-or-user\">\n" +
-    "	<a href=\"#\" title=\"Show yours\">\n" +
+    "<div class=\"public-or-user\">\n" +
+    "	<a ng-class=\"{ 'active' : publicOrUser == 'user' }\" ng-click=\"togglePublicOrUser()\" title=\"Show yours\">\n" +
     "		<i class=\"fa fa-user\"></i>\n" +
     "	</a>\n" +
-    "	<a class=\"active\" href=\"#\" title=\"Show all\">\n" +
+    "	<a ng-class=\"{ 'active' : publicOrUser == 'public' }\" ng-click=\"togglePublicOrUser()\" title=\"Show all\">\n" +
     "		<i class=\"fa fa-group\"></i>\n" +
     "	</a>\n" +
-    "</div>-->\n" +
+    "</div>\n" +
     "<div class=\"page-header\">\n" +
     "	<h2>Quotes</h2>\n" +
     "</div>\n" +

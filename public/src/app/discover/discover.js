@@ -17,12 +17,17 @@ angular.module('qt.discover', [
 	});
 }])
 
-.controller('DiscoverCtrl', ['$scope', 'PublicQuotes', 
-	function DiscoverCtrl ($scope, PublicQuotes) {
-		$scope.randomQuote =  PublicQuotes.random();
+.controller('DiscoverCtrl', ['$scope', 'QuoteService', 
+	function DiscoverCtrl ($scope, QuoteService) {
+		var Quotes = new QuoteService('public');
+
 
 		$scope.newQuote = function() {
-			$scope.randomQuote = PublicQuotes.random();
+			Quotes.random().then(function(quote) {
+				$scope.randomQuote = quote;	
+			});
 		};
+
+		$scope.newQuote();
 	}
 ]);

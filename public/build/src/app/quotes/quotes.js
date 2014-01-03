@@ -16,12 +16,9 @@ angular.module('qt.quotes', ['ui.router']).config([
   '$scope',
   'QuoteService',
   function ($scope, QuoteService) {
-    var Quotes = new QuoteService('user');
-    Quotes.query().then(function (quotes) {
-      $scope.quotes = quotes;
-    });
-    $scope.isCollapsed = false;
     $scope.removeTagIcon = 'fa-times';
+    $scope.publicOrUser = 'public';
+    var Quotes = new QuoteService($scope.publicOrUser);
     $scope.removeTag = function (removeInfo) {
       var quoteId = removeInfo.quoteId;
       var tagId = removeInfo.tagId;
@@ -34,5 +31,16 @@ angular.module('qt.quotes', ['ui.router']).config([
         return ele;
       });
     };
+    $scope.togglePublicOrUser = function () {
+      $scope.publicOrUser = $scope.publicOrUser === 'user' ? 'public' : 'user';
+      Quotes = new QuoteService($scope.publicOrUser);
+      $scope.getQuotes();
+    };
+    $scope.getQuotes = function () {
+      Quotes.query().then(function (quotes) {
+        $scope.quotes = quotes;
+      });
+    };
+    $scope.getQuotes();
   }
 ]);

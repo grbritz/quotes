@@ -46,17 +46,6 @@ angular.module('qt.services', ['ngResource']).factory('QuoteService', [
       return Resource;
     };
   }
-]).factory('UserQuote', [
-  '$resource',
-  function ($resource) {
-    var service = $resource('quotes/user/:id', { id: '@id' }, {
-        random: {
-          method: 'GET',
-          params: { id: 'random' }
-        }
-      });
-    return service;
-  }
 ]).factory('Tag', [
   '$resource',
   function ($resource) {

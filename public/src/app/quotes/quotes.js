@@ -18,9 +18,10 @@ angular.module('qt.quotes', [
 	function ($scope, QuoteService) {
 		//Initialize scope attributes
 		$scope.removeTagIcon = "fa-times";
-		$scope.publicOrUser = "user";
+		$scope.publicOrUser = "public";
 
 		var Quotes = new QuoteService($scope.publicOrUser);
+
 		
 		
 
@@ -52,6 +53,7 @@ angular.module('qt.quotes', [
 		$scope.togglePublicOrUser = function() {
 			$scope.publicOrUser = $scope.publicOrUser === "user" ? "public" : "user";
 			Quotes = new QuoteService($scope.publicOrUser);
+			$scope.getQuotes();
 
 		};
 
@@ -64,5 +66,7 @@ angular.module('qt.quotes', [
 				$scope.quotes = quotes;
 			});
 		};
+
+		$scope.getQuotes();
 	}
 ]);
