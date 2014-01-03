@@ -27,20 +27,20 @@
                         <a href="" title="Create a quote" data-toggle="modal" data-target="#newQuoteModal">
                                 <i class="fa fa-plus"></i>
                         </a>
-                        <a ng-class="{active: isActive('/quotes/list')}" href="#quotes/list" title="Your quotes">
+                        <a ng-class="{active: isActiveUrl('/quotes/list')}" href="#quotes" title="Your quotes">
                                 <i class="fa fa-quote-left"></i>
                         </a>
-                        <a ng-class="{active: isActive('/tags/list')}" href="#tags/list" title="Your tags">
+                        <a ng-class="{active: isActiveUrl('/tags/list')}" href="#tags" title="Your tags">
                                 <i class="fa fa-tags"></i>
                         </a>
-                        <a ng-class="{active: isActive('/discover')}" href="#discover" title="Discover quotes">
+                        <a ng-class="{active: isActiveUrl('/discover')}" href="#discover" title="Discover quotes">
                                 <i class="fa fa-random"></i>
                         </a>
                 </div>
         </div>
         <div id="page">
                 <div class="container-fluid">
-                        <div ng-view class="page-frame"></div>
+                        <div ui-view="main" class="page-frame"></div>
                 </div>
         </div>
         <!-- New quote modal -->

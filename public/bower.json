@@ -4,11 +4,15 @@
   "devDependencies": {
     "angular": "~1.0.7",
     "angular-mocks": "~1.0.7",
-    "bootstrap": "~2.3.2",
-    "angular-bootstrap": "~0.3.0",
-    "angular-ui-router": "~0.0.1",
-    "angular-ui-utils": "~0.0.3",
-    "font-awesome": "~4.0.3"
+    "bootstrap": "~3.0.3",
+    "angular-bootstrap": "~0.9.0",
+    "angular-ui-router": "~0.2.7",
+    "angular-ui-utils": "~0.1.0",
+    "font-awesome": "~4.0.3",
+    "angular-resource": "~1.2.6"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "resolutions": {
+    "angular": "1.2.6"
+  }
 }

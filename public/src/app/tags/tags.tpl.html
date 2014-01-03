@@ -1,0 +1,57 @@
+<div class="page-header">
+	<h2>Tags</h2>
+</div>
+<div class="tags">
+	<div class="page-filter">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Filter by keywords" name="filter-tags" ng-model="tagFilters" ng-list='/ /' />
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-body">
+
+			<div class="clearfix">
+				
+				<qt-tag ng-repeat="tag in tags | greedySearch:tagFilters"></qt-tag>
+
+				<!-- edit -->
+				<span class="label tag editor label-default">
+					<input type="text" value="Example editing">
+					<span>
+						<i title="delete" class="fa fa-times clickable"></i>
+					</span>
+				</span>
+
+				<!-- create (active) -->
+				<span class="label tag editor label-default">
+					<input type="text" placeholder="New tag">
+					<span>
+						<i class="fa fa-check clickable"></i>
+						<i class="fa fa-times clickable"></i>
+					</span>
+				</span>
+
+				<!-- create -->
+				<span class="label tag add-new label-default clickable">
+					<span>
+						<i class="fa fa-plus"></i>
+					</span>
+				</span>
+
+			</div>
+			<div ng-if="confirmDeleteTags">
+				<button class="btn btn-warning" ng-click="deleteTags()">Confirm Delete</button>
+				<button class="btn btn-default" ng-click="cancelDeleteTags()">Cancel</button>
+			</div>
+		</div>
+	<div>
+</div>
