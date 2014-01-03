@@ -1,0 +1,21 @@
+<div id="discover-quote">
+	<blockquote>
+		<p>
+			{{randomQuote.content}}
+		</p>
+		<small>
+			{{randomQuote.author}}
+			<span>
+				(via <cite><a href="http://church.com" target="_blank">source</a></cite>)
+			</span>
+		</small>
+	</blockquote>
+	<div class="controls">
+		<button type="button" ng-click="newQuote()" class="btn btn-lg btn-naked" title="Roll again">
+			<i class="fa fa-random"></i>
+		</button>
+		<button type="button" class="btn btn-lg btn-naked" title="Save quote">
+			<i class="fa fa-download"></i>
+		</button>
+	</div>
+</div>
