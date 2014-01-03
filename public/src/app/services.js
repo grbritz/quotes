@@ -1,7 +1,7 @@
 angular.module('qt.services', [
 	'ngResource'
 ])
-.factory('Quotes', ['$http',
+.factory('QuoteService', ['$http',
 	function ($http) {
 		return function (publicOrPrivate) {
 			/*
