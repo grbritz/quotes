@@ -41,8 +41,8 @@ angular.module('qt.quotes', [
 }]);*/
 
 .controller('QuotesCtrl', ['$scope', 'QuoteService', 
-	function ($scope, QuoteSerivce) {
-		var Quotes = QuoteServce('user');
+	function ($scope, QuoteService) {
+		var Quotes = new QuoteService('user');
 		Quotes.query().then(function(quotes) {
 			$scope.quotes = quotes;
 		});
@@ -51,18 +51,19 @@ angular.module('qt.quotes', [
 		$scope.removeTagIcon = "fa-times";
 
 		$scope.removeTag = function (removeInfo) {
-		var quoteId = removeInfo.quoteId;
-		var tagId = removeInfo.tagId;
+			var quoteId = removeInfo.quoteId;
+			var tagId = removeInfo.tagId;
 
-		//TODO : sync this change with the server
-		$scope.quotes = $scope.quotes.map(function(ele, ind) {
-			if(ele.id == quoteId) {
-				ele.tags = ele.tags.filter(function(ele2) {
-					return ele2.id != tagId;
-				});
-			}
-			return ele;
-		});
+			//TODO : sync this change with the server
+			$scope.quotes = $scope.quotes.map(function(ele, ind) {
+				if(ele.id == quoteId) {
+					ele.tags = ele.tags.filter(function(ele2) {
+						return ele2.id != tagId;
+					});
+				}
+				return ele;
+		
+			});
+		};
 	}
-
 ]);

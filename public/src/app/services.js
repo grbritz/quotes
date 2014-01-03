@@ -30,13 +30,13 @@ angular.module('qt.services', [
 			//		on network traffic
 			Resource.query = function (params) {
 				return $http.get(collectionUrl, {
-				           params: angular.extend({q:JSON.stringify({} || params)}, defaultParams)
+						params: angular.extend({q:JSON.stringify({} || params)}, defaultParams)
 					}).then(function (response) { 
 						var result = [];
 						angular.forEach(response.data, function (value, key) {
-					           	result[key] = new Resource(value);
+							result[key] = new Resource(value);
 						});
-					   	return result;
+						return result;
 					});
 			};
 
@@ -71,20 +71,13 @@ angular.module('qt.services', [
 			 * @param  {int} id the quote to delete
 			 * @return {Resource} an instance of this resource
 			 */
-			Resource.delete = function (id) {
-				return $http.delete(collectionUrl, { params: angular.extend({ id : id }, defaultParams) })
+			Resource.remove = function (id) {
+				return $http.remove(collectionUrl, { params: angular.extend({ id : id }, defaultParams) })
 					.then(function (response) {
 						return new Resource(data);
 					}, function (response) {
 						console.log("Error - Could not delete quote : " + response);
 					});
-			};
-
-			/**
-			 * Delegates to Resource.delete
-			 */
-			Resource.remove = function (id) {
-				return Resource.delete(id);
 			};
 
 			/**
@@ -110,7 +103,7 @@ angular.module('qt.services', [
 			};
 
 			return Resource;
-		}
+		};
 	}
 ])
 .factory('UserQuote', ['$resource',
